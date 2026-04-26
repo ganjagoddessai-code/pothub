@@ -1,0 +1,267 @@
+{
+  "name": "PotGrowHub: The Socket",
+  "short_name": "PotGrowHub",
+  "description": "The world's first AI-powered, voice-controlled, agentic cannabis marketplace. From seed to smoke, we are the Socket.",
+  "categories": [
+    "lifestyle", 
+    "shopping", 
+    "business", 
+    "utilities", 
+    "entertainment", 
+    "productivity", 
+    "social", 
+    "finance", 
+    "medical", 
+    "graphics-design",
+    "developer-tools",
+    "education",
+    "food-drink",
+    "maps-navigation",
+    "personalized-recommendations",
+    "augmented-reality",
+    "virtual-reality",
+    "sustainable-living",
+    "logistics-supply-chain",
+    "ai-agents",
+    "personalization",
+    "manufacturing",
+    "agriculture",
+    "transportation",
+    "photo-video",
+    "events",
+    "health-fitness"
+  ],
+  "iarc_rating_id": "e58688bb-854b-4b13-9e6b-a25e173e3c0d",
+  "lang": "en-US",
+  "dir": "ltr",
+  "start_url": "index.html",
+  "id": "/?source=pwa",
+  "display": "standalone",
+  "display_override": [
+    "window-controls-overlay", 
+    "minimal-ui", 
+    "fullscreen", 
+    "browser"
+  ],
+  "orientation": "portrait-primary",
+  "background_color": "#000000",
+  "theme_color": "#39ff14",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "https://via.placeholder.com/192?text=🌿",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://via.placeholder.com/512?text=🌿",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "https://via.placeholder.com/1024?text=PotGrowHub",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "AI Budtender",
+      "short_name": "Guru",
+      "description": "Talk to the GanjaGoddess for instant cannabis wisdom.",
+      "url": "/index.html?mode=ai",
+      "icons": [{ "src": "https://via.placeholder.com/96?text=🧠", "sizes": "96x96" }]
+    },
+    {
+      "name": "3D Design Studio",
+      "short_name": "Design",
+      "description": "Create your custom 3D bongs and gear.",
+      "url": "/index.html?mode=design",
+      "icons": [{ "src": "https://via.placeholder.com/96?text=🎨", "sizes": "96x96" }]
+    },
+    {
+      "name": "Track Delivery",
+      "short_name": "Track",
+      "description": "Where is my Kush?",
+      "url": "/index.html?mode=delivery",
+      "icons": [{ "src": "https://via.placeholder.com/96?text=🚚", "sizes": "96x96" }]
+    },
+    {
+      "name": "Marketplace Hustle",
+      "short_name": "Deals",
+      "description": "Ghost agentic deals and procurement.",
+      "url": "/index.html?mode=marketplace",
+      "icons": [{ "src": "https://via.placeholder.com/96?text=💰", "sizes": "96x96" }]
+    },
+    {
+      "name": "Quick Drop",
+      "url": "/index.html?mode=upload",
+      "description": "Instantly upload to the Socket.",
+      "icons": [{ "src": "https://via.placeholder.com/96?text=📤", "sizes": "96x96" }]
+    },
+    {
+      "name": "Voice Hustle",
+      "url": "/index.html?mode=voice_command",
+      "description": "Hands-free socket control.",
+      "icons": [{ "src": "https://via.placeholder.com/96?text=🎙️", "sizes": "96x96" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://via.placeholder.com/1080x1920?text=Orbital+UI+Preview",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "The GanjaGoddess Orbital Interface"
+    },
+    {
+      "src": "https://via.placeholder.com/1080x1920?text=3D+Design+Canvas",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Custom 3D Printing on Demand Studio"
+    },
+    {
+      "src": "https://via.placeholder.com/1920x1080?text=Desktop+Hustle+View",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Agentic Marketplace Dashboard"
+    }
+  ],
+  "protocol_handlers": [
+    { "protocol": "web+pot", "url": "/index.html?query=%s" },
+    { "protocol": "web+ganja", "url": "/index.html?query=%s" },
+    { "protocol": "web+hustle", "url": "/index.html?query=%s" },
+    { "protocol": "web+socket", "url": "/index.html?query=%s" },
+    { "protocol": "web+budtender", "url": "/index.html?voice=%s" },
+    { "protocol": "web+dropship", "url": "/index.html?procure=%s" },
+    { "protocol": "web+eco", "url": "/index.html?eco_search=%s" },
+    { "protocol": "web+3dpod", "url": "/index.html?design=%s" },
+    { "protocol": "web+delivery", "url": "/index.html?track=%s" },
+    { "protocol": "web+procure", "url": "/index.html?source=%s" }
+  ],
+  "share_target": {
+    "action": "/upload-analyze",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "share_title",
+      "text": "share_text",
+      "url": "share_url",
+      "files": [
+        {
+          "name": "media",
+          "accept": [
+            "image/*", 
+            "audio/*", 
+            "video/*", 
+            ".pdf", 
+            ".txt", 
+            ".json", 
+            ".md", 
+            ".csv",
+            ".obj",
+            ".stl",
+            ".gltf",
+            ".glb",
+            ".3mf",
+            ".step"
+          ]
+        }
+      ]
+    }
+  ],
+  "file_handlers": [
+    {
+      "action": "/index.html?mode=analyze",
+      "accept": {
+        "text/*": [".txt", ".md", ".json", ".csv"],
+        "application/pdf": [".pdf"],
+        "model/stl": [".stl"],
+        "model/obj": [".obj"],
+        "model/gltf+json": [".gltf"],
+        "model/gltf-binary": [".glb"],
+        "model/3mf": [".3mf"],
+        "application/step": [".step", ".stp"]
+      }
+    }
+  ],
+  "scope_extensions": [
+    { "origin": "https://potgrowhub.com" },
+    { "origin": "https://ganjaguru.ai" },
+    { "origin": "https://thetekwhisperer.com" },
+    { "origin": "https://socket.pothub.io" }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "launch_handler": {
+    "client_mode": ["focus-existing", "auto"]
+  },
+  "edge_side_panel": {
+    "preferred_width": 450
+  },
+  "widgets": [
+    {
+      "name": "PotGrowHub Tracker",
+      "description": "Live status of your agentic marketplace orders.",
+      "tag": "delivery-widget",
+      "template": "widget-template",
+      "data": "widget-data",
+      "type": "application/json",
+      "auth": false
+    },
+    {
+      "name": "Daily Ganja Wisdom",
+      "description": "Tips from the Guru to elevate your hustle.",
+      "tag": "wisdom-widget",
+      "template": "wisdom-template"
+    },
+    {
+      "name": "Design Studio Quick-Launch",
+      "description": "Jump straight into your 3D canvas.",
+      "tag": "design-widget",
+      "template": "design-template"
+    }
+  ],
+  "capture_links": "existing-client-navigate",
+  "permissions": [
+    "audio-capture",
+    "video-capture",
+    "display-capture",
+    "geolocation",
+    "bluetooth",
+    "nfc",
+    "usb",
+    "serial",
+    "camera",
+    "microphone",
+    "window-management",
+    "accelerometer",
+    "gyroscope",
+    "magnetometer",
+    "clipboard-read",
+    "clipboard-write",
+    "payment"
+  ],
+  "description_l10n": {
+    "en-GB": "The world's leading AI-powered cannabis concierge and autonomous marketplace.",
+    "es": "El primer mercado de cannabis del mundo controlado por voz y potenciado por IA.",
+    "fr": "Le premier concierge de cannabis au monde alimenté par l'IA et marché autonome.",
+    "de": "Der weltweit erste KI-gesteuerte Cannabis-Concierge und autonome Marktplatz."
+  },
+  "lock_screen": {
+    "start_url": "/index.html?mode=lockscreen"
+  },
+  "note_taking": {
+    "new_note_url": "/index.html?mode=new_note"
+  },
+  "handle_links": "preferred",
+  "user_agent_override": "PotGrowHubSocket/1.0",
+  "edge_overlay": {
+    "visible": true
+  }
+}

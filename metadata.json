@@ -1,0 +1,5 @@
+{
+  "name": "THE SOCKET",
+  "description": "An AI-powered eco-grid and sustainable cannabis metaverse. Automated 3D printing, AR grow design, and neural-sync technology.",
+  "requestFramePermissions": ["microphone", "camera", "geolocation", "clipboard-read", "clipboard-write", "fullscreen", "display-capture"]
+}
