@@ -1,6 +1,6 @@
 {
-  "name": "PotGrowHub: The Socket",
-  "short_name": "PotGrowHub",
+  "name": "ganjagoddessai: The Socket",
+  "short_name": "ganjagoddessai",
   "description": "The world's first AI-powered, voice-controlled, agentic cannabis marketplace. From seed to smoke, we are the Socket.",
   "categories": [
     "lifestyle", 
@@ -61,7 +61,7 @@
       "purpose": "maskable"
     },
     {
-      "src": "https://via.placeholder.com/1024?text=PotGrowHub",
+      "src": "https://via.placeholder.com/1024?text=ganjagoddessai",
       "sizes": "1024x1024",
       "type": "image/png",
       "purpose": "any"
@@ -174,7 +174,7 @@
         }
       ]
     }
-  ],
+  },
   "file_handlers": [
     {
       "action": "/index.html?mode=analyze",
@@ -191,8 +191,8 @@
     }
   ],
   "scope_extensions": [
-    { "origin": "https://potgrowhub.com" },
-    { "origin": "https://ganjaguru.ai" },
+    { "origin": "https://ganjagoddessai.com" },
+    { "origin": "https://ganjagoddessai.ai" },
     { "origin": "https://thetekwhisperer.com" },
     { "origin": "https://socket.pothub.io" }
   ],
@@ -206,7 +206,7 @@
   },
   "widgets": [
     {
-      "name": "PotGrowHub Tracker",
+      "name": "ganjagoddessai Tracker",
       "description": "Live status of your agentic marketplace orders.",
       "tag": "delivery-widget",
       "template": "widget-template",
@@ -260,7 +260,7 @@
     "new_note_url": "/index.html?mode=new_note"
   },
   "handle_links": "preferred",
-  "user_agent_override": "PotGrowHubSocket/1.0",
+  "user_agent_override": "ganjagoddessaiSocket/1.0",
   "edge_overlay": {
     "visible": true
   }

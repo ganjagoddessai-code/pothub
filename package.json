@@ -1,5 +1,5 @@
 {
-"name": "potgrowhub-the-socket",
+"name": "ganjagoddessai-the-socket",
 "version": "1.0.0",
 "description": "The world's first AI-powered, voice-controlled, agentic cannabis marketplace. From seed to smoke, we are the Socket.",
 "main": "index.js",
@@ -13,12 +13,12 @@
 "cap:open:android": "cap open android",
 "cap:open:ios": "cap open ios",
 "lint": "eslint src --ext .js,.jsx",
-"format": "prettier --write "src/**/*.{js,jsx,css,md}"",
+"format": "prettier --write \"src/**/*.{js,jsx,css,md}\"",
 "test": "vitest",
 "pwa:generate": "pwa-asset-generator ./public/logo.png ./public/assets/pwa -m ./public/manifest.json"
 },
 "keywords": [
-"potgrowhub",
+"ganjagoddessai",
 "cannabis-ai",
 "budtender",
 "agentic-marketplace",
@@ -27,10 +27,10 @@
 "ar-vr",
 "dropshipping-automation",
 "eco-friendly",
-"ganjaguru",
+"ganjagoddessai",
 "pwa"
 ],
-"author": "Ray Meadows ray@potgrowhub.com",
+"author": "Ray Meadows ray@ganjagoddessai.com",
 "license": "MIT",
 "dependencies": {
 "@capacitor/android": "^5.7.0",
@@ -73,12 +73,12 @@
 },
 "repository": {
 "type": "git",
-"url": "git+https://github.com/potgrowhub/the-socket.git"
+"url": "git+https://github.com/ganjagoddessai-code/the-socket.git"
 },
 "bugs": {
-"url": "https://github.com/potgrowhub/the-socket/issues"
+"url": "https://github.com/ganjagoddessai-code/the-socket/issues"
 },
-"homepage": "https://potgrowhub.com",
+"homepage": "https://ganjagoddessai.com",
 "browserslist": [
 ">0.2%",
 "not dead",
