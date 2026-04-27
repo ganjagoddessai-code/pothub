@@ -1,5 +1,188 @@
 {
-  "name": "THE SOCKET",
+  "name": "GanjaGoddess",
   "description": "An AI-powered eco-grid and sustainable cannabis metaverse. Automated 3D printing, AR grow design, and neural-sync technology.",
-  "requestFramePermissions": ["microphone", "camera", "geolocation", "clipboard-read", "clipboard-write", "fullscreen", "display-capture"]
+  "requestFramePermissions": [
+    "microphone",
+    "camera",
+    "geolocation",
+    "clipboard-read",
+    "clipboard-write",
+    "fullscreen",
+    "display-capture"
+  ],
+
+  "meta": {
+    "title": "GanjaGoddessAI | Cannabis Intelligence Platform",
+    "tagline": "Elevate your mind. Automate your grind.",
+    "keywords": [
+      "AI cannabis",
+      "weed AI",
+      "ganja platform",
+      "cannabis automation",
+      "smart grow tech",
+      "AI dispensary",
+      "weed recommendations",
+      "cannabis metaverse"
+    ],
+    "author": "GanjaGoddessAI",
+    "version": "1.0.0",
+    "status": "active"
+  },
+
+  "branding": {
+    "voice": "bold, intelligent, slightly mystical",
+    "tone": "direct, strategic, empowering",
+    "colors": {
+      "primary": "#00ff88",
+      "secondary": "#0f0f0f",
+      "accent": "#a855f7"
+    },
+    "aesthetic": ["nature-tech", "futuristic", "psychedelic"]
+  },
+
+  "ai": {
+    "enabled": true,
+    "roles": [
+      "cannabis_guide",
+      "product_recommender",
+      "sales_agent",
+      "content_creator",
+      "growth_hacker"
+    ],
+    "capabilities": [
+      "natural_language_chat",
+      "voice_interaction",
+      "image_analysis",
+      "predictive_recommendations",
+      "behavior_tracking",
+      "content_generation"
+    ],
+    "response_modes": [
+      "educational",
+      "conversational",
+      "persuasive",
+      "analytical"
+    ]
+  },
+
+  "features": {
+    "chatbot": true,
+    "voice_assistant": true,
+    "ar_tools": true,
+    "3d_visualization": true,
+    "auto_content": true,
+    "auto_seo": true,
+    "auto_social": true,
+    "email_automation": true,
+    "lead_capture": true,
+    "analytics_dashboard": true
+  },
+
+  "cannabis": {
+    "modules": [
+      "strain_database",
+      "terpene_profiles",
+      "cannabinoid_education",
+      "grow_guides",
+      "product_recommendations"
+    ],
+    "user_modes": [
+      "beginner",
+      "enthusiast",
+      "medical",
+      "business"
+    ]
+  },
+
+  "monetization": {
+    "enabled": true,
+    "streams": [
+      "affiliate_links",
+      "digital_products",
+      "subscriptions",
+      "lead_generation",
+      "ai_sales_funnels"
+    ],
+    "automation": {
+      "dynamic_offers": true,
+      "upsells": true,
+      "conversion_tracking": true
+    }
+  },
+
+  "automation": {
+    "content": {
+      "auto_generate": true,
+      "auto_publish": true,
+      "topics": "trend_based"
+    },
+    "marketing": {
+      "auto_post_social": true,
+      "email_sequences": true,
+      "lead_nurturing": true
+    }
+  },
+
+  "growth": {
+    "seo": {
+      "auto_pages": true,
+      "keyword_targeting": true,
+      "internal_linking": true
+    },
+    "traffic": [
+      "organic",
+      "social",
+      "referral",
+      "direct"
+    ]
+  },
+
+  "permissions": {
+    "requestFramePermissions": [
+      "microphone",
+      "camera",
+      "geolocation",
+      "clipboard-read",
+      "clipboard-write",
+      "fullscreen",
+      "display-capture"
+    ],
+    "usage": {
+      "microphone": "voice commands and AI interaction",
+      "camera": "AR tools and image recognition",
+      "geolocation": "local recommendations and compliance",
+      "clipboard": "data transfer and automation",
+      "display_capture": "screen sharing and tutorials"
+    }
+  },
+
+  "security": {
+    "https_required": true,
+    "data_encryption": true,
+    "user_privacy": true,
+    "compliance": [
+      "general_privacy_standards",
+      "cannabis_regulation_awareness"
+    ]
+  },
+
+  "integrations": {
+    "payments": ["stripe"],
+    "analytics": ["custom_ai_tracking", "google_analytics"],
+    "social": ["instagram", "twitter", "facebook", "tiktok"],
+    "apis": ["content_sources", "trend_detection", "ai_services"]
+  },
+
+  "deployment": {
+    "platforms": ["vercel", "netlify", "cloudflare"],
+    "cdn": true,
+    "scaling": "auto"
+  },
+
+  "experimental": {
+    "neural_sync": true,
+    "ar_grow_overlay": true,
+    "voice_navigation": true,
+    "predictive_intent": true
+  }
 }
