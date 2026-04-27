@@ -4,6 +4,13 @@
 "description": "The world's first AI-powered, voice-controlled, agentic cannabis marketplace. From seed to smoke, we are the Socket.",
 "main": "index.js",
 "type": "module",
+
+"displayName": "GanjaGoddessAI: The Socket",
+"productName": "The Socket",
+"platform": "web-mobile-hybrid",
+"environment": "production",
+"releaseChannel": "stable",
+
 "scripts": {
 "start": "node index.js",
 "dev": "vite",
@@ -15,8 +22,34 @@
 "lint": "eslint src --ext .js,.jsx",
 "format": "prettier --write \"src/**/*.{js,jsx,css,md}\"",
 "test": "vitest",
-"pwa:generate": "pwa-asset-generator ./public/logo.png ./public/assets/pwa -m ./public/manifest.json"
+"pwa:generate": "pwa-asset-generator ./public/logo.png ./public/assets/pwa -m ./public/manifest.json",
+
+"dev:host": "vite --host",
+"build:analyze": "vite build --mode analyze",
+"clean": "rm -rf dist node_modules",
+"reinstall": "npm run clean && npm install",
+
+"deploy": "npm run build",
+"deploy:preview": "npm run build && npm run preview",
+
+"seo:generate": "node scripts/generate-seo-pages.js",
+"sitemap:generate": "node scripts/generate-sitemap.js",
+"metadata:sync": "node scripts/sync-metadata.js",
+
+"ai:train": "node ai/train.js",
+"ai:serve": "node ai/server.js",
+
+"test:watch": "vitest --watch",
+"lint:fix": "eslint src --fix",
+
+"format:check": "prettier --check \"src/**/*.{js,jsx,css,md}\"",
+
+"ai:optimize": "node ai/optimize.js",
+"seo:audit": "node scripts/seo-audit.js",
+"analytics:report": "node scripts/analytics-report.js",
+"deploy:full": "npm run build && npm run seo:generate && npm run sitemap:generate"
 },
+
 "keywords": [
 "ganjagoddessai",
 "cannabis-ai",
@@ -28,10 +61,34 @@
 "dropshipping-automation",
 "eco-friendly",
 "ganjagoddessai",
-"pwa"
+"pwa",
+"ai-commerce",
+"llm-optimized",
+"answer-engine-optimization",
+"voice-ai",
+"metaverse-cannabis",
+"smart-grow",
+"automation-platform"
 ],
+
 "author": "Ray Meadows ray@ganjagoddessai.com",
 "license": "MIT",
+
+"funding": {
+"type": "individual",
+"url": "https://ganjagoddessai.com/support"
+},
+
+"config": {
+"aiEnabled": true,
+"voiceEnabled": true,
+"arEnabled": true,
+"automationLevel": "full",
+"seoMode": "programmatic",
+"indexingStrategy": "open",
+"analytics": true
+},
+
 "dependencies": {
 "@capacitor/android": "^5.7.0",
 "@capacitor/core": "^5.7.0",
@@ -56,6 +113,7 @@
 "clsx": "^2.1.0",
 "tailwind-merge": "^2.2.1"
 },
+
 "devDependencies": {
 "@capacitor/cli": "^5.7.0",
 "vite": "^5.1.0",
@@ -67,23 +125,151 @@
 "vitest": "^1.2.2",
 "pwa-asset-generator": "^6.3.1"
 },
+
 "engines": {
 "node": ">=18.0.0",
 "npm": ">=9.0.0"
 },
+
 "repository": {
 "type": "git",
 "url": "git+https://github.com/ganjagoddessai-code/the-socket.git"
 },
+
 "bugs": {
 "url": "https://github.com/ganjagoddessai-code/the-socket/issues"
 },
+
 "homepage": "https://ganjagoddessai.com",
+
 "browserslist": [
 ">0.2%",
 "not dead",
 "not op_mini all",
 "android >= 5",
 "ios >= 12"
+],
+
+"pwa": {
+"enabled": true,
+"strategy": "offline-first",
+"cache": {
+"static": true,
+"dynamic": true,
+"api": true
+},
+"features": {
+"installPrompt": true,
+"backgroundSync": true,
+"pushNotifications": true
+}
+},
+
+"seo": {
+"autoGenerate": true,
+"sitemap": true,
+"structuredData": true,
+"openGraph": true,
+"twitterCards": true,
+"schemaTypes": ["Organization", "Product", "Article", "FAQ"],
+"aiIndexing": true
+},
+
+"ai": {
+"mode": "agentic",
+"personality": "gangster-hippie",
+"capabilities": [
+"chat",
+"voice",
+"recommendation",
+"automation",
+"sales"
+],
+"learning": {
+"enabled": true,
+"adaptive": true,
+"feedbackLoop": true
+},
+"memory": {
+"shortTerm": true,
+"longTerm": true
+}
+},
+
+"deployment": {
+"platforms": ["vercel", "netlify", "capacitor"],
+"cdn": true,
+"edgeFunctions": true,
+"regions": ["us-east", "us-west", "global"],
+"autoScaling": true
+},
+
+"analytics": {
+"enabled": true,
+"providers": ["custom", "google"],
+"tracking": [
+"userBehavior",
+"conversion",
+"engagement",
+"aiInteractions"
 ]
+},
+
+"security": {
+"https": true,
+"contentSecurityPolicy": true,
+"permissionsPolicy": true,
+"headers": {
+"x-frame-options": "DENY",
+"x-content-type-options": "nosniff"
+}
+},
+
+"growth": {
+"seoEngine": "programmatic",
+"pageGeneration": "dynamic",
+"internalLinking": true,
+"keywordExpansion": true,
+"trafficSources": ["organic", "social", "direct", "ai"]
+},
+
+"monetization": {
+"enabled": true,
+"streams": [
+"affiliate",
+"digitalProducts",
+"subscriptions",
+"leadGen",
+"aiFunnels"
+],
+"optimization": {
+"abTesting": true,
+"dynamicPricing": true
+}
+},
+
+"automation": {
+"enabled": true,
+"systems": [
+"content",
+"seo",
+"marketing",
+"analytics",
+"aiTraining"
+]
+},
+
+"observability": {
+"logging": true,
+"monitoring": true,
+"errorTracking": true,
+"performanceMetrics": true
+},
+
+"experimental": {
+"neuralSync": true,
+"arGrowOverlay": true,
+"aiGeneratedWorlds": true,
+"predictiveIntent": true
+}
 }
