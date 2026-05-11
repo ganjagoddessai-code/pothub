@@ -1,267 +1,528 @@
 {
-  "name": "ganjagoddessai: The Socket",
-  "short_name": "ganjagoddessai",
-  "description": "The world's first AI-powered, voice-controlled, agentic cannabis marketplace. From seed to smoke, we are the Socket.",
-  "categories": [
-    "lifestyle", 
-    "shopping", 
-    "business", 
-    "utilities", 
-    "entertainment", 
-    "productivity", 
-    "social", 
-    "finance", 
-    "medical", 
-    "graphics-design",
-    "developer-tools",
-    "education",
-    "food-drink",
-    "maps-navigation",
-    "personalized-recommendations",
-    "augmented-reality",
-    "virtual-reality",
-    "sustainable-living",
-    "logistics-supply-chain",
-    "ai-agents",
-    "personalization",
-    "manufacturing",
-    "agriculture",
-    "transportation",
-    "photo-video",
-    "events",
-    "health-fitness"
-  ],
-  "iarc_rating_id": "e58688bb-854b-4b13-9e6b-a25e173e3c0d",
+  "name": "GanjaGoddessAI",
+  "short_name": "GanjaAI",
+  "description": "Smoke-driven orbital AI interface with spatial commerce, AR/VR 3D PoD systems, conversational intelligence ecosystem, autonomous AI agents, immersive WebXR environments, adaptive UI physics, monetization systems, intelligent delivery orchestration, and living orbital navigation architecture.",
+
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#00ff99",
+  "background_color": "#000000",
+
   "lang": "en-US",
   "dir": "ltr",
-  "start_url": "index.html",
-  "id": "/?source=pwa",
-  "display": "standalone",
+
   "display_override": [
-    "window-controls-overlay", 
-    "minimal-ui", 
-    "fullscreen", 
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui",
+    "fullscreen",
     "browser"
   ],
-  "orientation": "portrait-primary",
-  "background_color": "#000000",
-  "theme_color": "#39ff14",
-  "scope": "/",
+
+  "categories": [
+    "lifestyle",
+    "productivity",
+    "utilities",
+    "shopping",
+    "entertainment",
+    "art",
+    "design",
+    "education",
+    "business",
+    "commerce",
+    "technology",
+    "ai",
+    "machine-learning",
+    "deep-learning",
+    "automation",
+    "generative-ai",
+    "conversational-ai",
+    "voice-ai",
+    "augmented-reality",
+    "virtual-reality",
+    "mixed-reality",
+    "xr",
+    "spatial-computing",
+    "immersive-experience",
+    "metaverse",
+    "gaming",
+    "simulation",
+    "3d-printing",
+    "3d-modeling",
+    "3d-rendering",
+    "cad",
+    "ecommerce",
+    "marketplace",
+    "social-networking",
+    "community",
+    "creator-economy",
+    "developer-tools",
+    "analytics",
+    "workflow",
+    "cloud-computing",
+    "logistics",
+    "delivery",
+    "transportation",
+    "finance",
+    "payments",
+    "blockchain",
+    "web3",
+    "crypto",
+    "iot",
+    "smart-home",
+    "media",
+    "streaming",
+    "music",
+    "video",
+    "health",
+    "wellness",
+    "learning",
+    "knowledge-base",
+    "research",
+    "startup",
+    "marketing",
+    "advertising",
+    "affiliate-marketing",
+    "dropshipping",
+    "print-on-demand",
+    "3dpod",
+    "eco-friendly",
+    "sustainability",
+    "robotics",
+    "real-time",
+    "edge-computing",
+    "cybersecurity",
+    "privacy",
+    "digital-twin",
+    "future-tech",
+    "interactive-ui",
+    "neural-interface",
+    "smart-commerce",
+    "autonomous-systems"
+  ],
+
+  "iarc_rating_id": "e6d4b0c2-ganjagoddessai",
+
   "icons": [
     {
-      "src": "https://via.placeholder.com/192?text=🌿",
-      "sizes": "192x192",
+      "src": "/assets/icons/icon-72.png",
+      "sizes": "72x72",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "https://via.placeholder.com/512?text=🌿",
-      "sizes": "512x512",
+      "src": "/assets/icons/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-144.png",
+      "sizes": "144x144",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "https://via.placeholder.com/1024?text=ganjagoddessai",
+      "src": "/assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icons/icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icons/icon-384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icons/icon-1024.png",
       "sizes": "1024x1024",
       "type": "image/png",
-      "purpose": "any"
+      "purpose": "any maskable monochrome"
     }
   ],
+
+  "screenshots": [
+    {
+      "src": "/assets/screenshots/hero.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Main orbital smoke interface"
+    },
+    {
+      "src": "/assets/screenshots/mobile.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile AI assistant mode"
+    },
+    {
+      "src": "/assets/screenshots/xr.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Immersive XR commerce environment"
+    },
+    {
+      "src": "/assets/screenshots/design-studio.png",
+      "sizes": "1600x900",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "3D PoD design studio"
+    }
+  ],
+
   "shortcuts": [
     {
-      "name": "AI Budtender",
-      "short_name": "Guru",
-      "description": "Talk to the GanjaGoddess for instant cannabis wisdom.",
-      "url": "/index.html?mode=ai",
-      "icons": [{ "src": "https://via.placeholder.com/96?text=🧠", "sizes": "96x96" }]
+      "name": "AI Chat",
+      "short_name": "Chat",
+      "description": "Open AI conversation interface",
+      "url": "/chat",
+      "icons": [
+        {
+          "src": "/assets/icons/chat.png",
+          "sizes": "96x96"
+        }
+      ]
     },
     {
       "name": "3D Design Studio",
       "short_name": "Design",
-      "description": "Create your custom 3D bongs and gear.",
-      "url": "/index.html?mode=design",
-      "icons": [{ "src": "https://via.placeholder.com/96?text=🎨", "sizes": "96x96" }]
+      "description": "Create AR/VR 3D print models",
+      "url": "/design",
+      "icons": [
+        {
+          "src": "/assets/icons/design.png",
+          "sizes": "96x96"
+        }
+      ]
     },
     {
-      "name": "Track Delivery",
-      "short_name": "Track",
-      "description": "Where is my Kush?",
-      "url": "/index.html?mode=delivery",
-      "icons": [{ "src": "https://via.placeholder.com/96?text=🚚", "sizes": "96x96" }]
+      "name": "Marketplace",
+      "short_name": "Store",
+      "description": "Ghost agentic commerce system",
+      "url": "/store",
+      "icons": [
+        {
+          "src": "/assets/icons/store.png",
+          "sizes": "96x96"
+        }
+      ]
     },
     {
-      "name": "Marketplace Hustle",
-      "short_name": "Deals",
-      "description": "Ghost agentic deals and procurement.",
-      "url": "/index.html?mode=marketplace",
-      "icons": [{ "src": "https://via.placeholder.com/96?text=💰", "sizes": "96x96" }]
+      "name": "Orbital AI Engine",
+      "short_name": "Orbit AI",
+      "description": "Smoke-based spatial AI navigation system",
+      "url": "/orbit",
+      "icons": [
+        {
+          "src": "/assets/icons/orbit.png",
+          "sizes": "96x96"
+        }
+      ]
     },
     {
-      "name": "Quick Drop",
-      "url": "/index.html?mode=upload",
-      "description": "Instantly upload to the Socket.",
-      "icons": [{ "src": "https://via.placeholder.com/96?text=📤", "sizes": "96x96" }]
+      "name": "AR/VR Experience",
+      "short_name": "XR",
+      "description": "Immersive augmented and virtual reality mode",
+      "url": "/xr",
+      "icons": [
+        {
+          "src": "/assets/icons/xr.png",
+          "sizes": "96x96"
+        }
+      ]
     },
     {
-      "name": "Voice Hustle",
-      "url": "/index.html?mode=voice_command",
-      "description": "Hands-free socket control.",
-      "icons": [{ "src": "https://via.placeholder.com/96?text=🎙️", "sizes": "96x96" }]
+      "name": "3DPoD Factory",
+      "short_name": "3DPoD",
+      "description": "On-demand 3D printing production system",
+      "url": "/3dpod",
+      "icons": [
+        {
+          "src": "/assets/icons/3dpod.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "AI Agent Control Panel",
+      "short_name": "Agents",
+      "description": "Manage autonomous ghost AI agents",
+      "url": "/agents",
+      "icons": [
+        {
+          "src": "/assets/icons/agents.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Commerce Analytics",
+      "short_name": "Analytics",
+      "description": "Revenue, behavior, and conversion intelligence dashboard",
+      "url": "/analytics",
+      "icons": [
+        {
+          "src": "/assets/icons/analytics.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Knowledge Nexus",
+      "short_name": "Knowledge",
+      "description": "Learning center and cannabis intelligence system",
+      "url": "/knowledge",
+      "icons": [
+        {
+          "src": "/assets/icons/knowledge.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Voice Command Hub",
+      "short_name": "Voice",
+      "description": "Hands-free conversational control center",
+      "url": "/voice",
+      "icons": [
+        {
+          "src": "/assets/icons/voice.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Creator Marketplace",
+      "short_name": "Creators",
+      "description": "Creator monetization and digital product ecosystem",
+      "url": "/creators",
+      "icons": [
+        {
+          "src": "/assets/icons/creator.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Delivery Grid",
+      "short_name": "Delivery",
+      "description": "Smart logistics and ride-share orchestration",
+      "url": "/delivery",
+      "icons": [
+        {
+          "src": "/assets/icons/delivery.png",
+          "sizes": "96x96"
+        }
+      ]
     }
   ],
-  "screenshots": [
+
+  "id": "ganjagoddessai.app",
+
+  "prefer_related_applications": false,
+
+  "related_applications": [
     {
-      "src": "https://via.placeholder.com/1080x1920?text=Orbital+UI+Preview",
-      "sizes": "1080x1920",
-      "type": "image/png",
-      "form_factor": "narrow",
-      "label": "The GanjaGoddess Orbital Interface"
-    },
-    {
-      "src": "https://via.placeholder.com/1080x1920?text=3D+Design+Canvas",
-      "sizes": "1080x1920",
-      "type": "image/png",
-      "form_factor": "narrow",
-      "label": "Custom 3D Printing on Demand Studio"
-    },
-    {
-      "src": "https://via.placeholder.com/1920x1080?text=Desktop+Hustle+View",
-      "sizes": "1920x1080",
-      "type": "image/png",
-      "form_factor": "wide",
-      "label": "Agentic Marketplace Dashboard"
+      "platform": "webapp",
+      "url": "https://ganjagoddessai.com"
     }
   ],
+
+  "edge_side_panel": {
+    "preferred_width": 420
+  },
+
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+
+  "handle_links": "preferred",
+
+  "capture_links": "existing-client-navigate",
+
+  "orientation_lock": "natural",
+
   "protocol_handlers": [
-    { "protocol": "web+pot", "url": "/index.html?query=%s" },
-    { "protocol": "web+ganja", "url": "/index.html?query=%s" },
-    { "protocol": "web+hustle", "url": "/index.html?query=%s" },
-    { "protocol": "web+socket", "url": "/index.html?query=%s" },
-    { "protocol": "web+budtender", "url": "/index.html?voice=%s" },
-    { "protocol": "web+dropship", "url": "/index.html?procure=%s" },
-    { "protocol": "web+eco", "url": "/index.html?eco_search=%s" },
-    { "protocol": "web+3dpod", "url": "/index.html?design=%s" },
-    { "protocol": "web+delivery", "url": "/index.html?track=%s" },
-    { "protocol": "web+procure", "url": "/index.html?source=%s" }
+    {
+      "protocol": "web+goddessai",
+      "url": "/intent?data=%s"
+    },
+    {
+      "protocol": "web+3dpod",
+      "url": "/3dpod/intent?data=%s"
+    },
+    {
+      "protocol": "web+xr",
+      "url": "/xr/intent?data=%s"
+    },
+    {
+      "protocol": "web+ghostcommerce",
+      "url": "/commerce?intent=%s"
+    },
+    {
+      "protocol": "web+orbit",
+      "url": "/orbit?node=%s"
+    }
   ],
+
   "share_target": {
-    "action": "/upload-analyze",
+    "action": "/share",
     "method": "POST",
     "enctype": "multipart/form-data",
     "params": {
-      "title": "share_title",
-      "text": "share_text",
-      "url": "share_url",
+      "title": "title",
+      "text": "text",
+      "url": "url",
       "files": [
         {
           "name": "media",
           "accept": [
-            "image/*", 
-            "audio/*", 
-            "video/*", 
-            ".pdf", 
-            ".txt", 
-            ".json", 
-            ".md", 
-            ".csv",
-            ".obj",
-            ".stl",
-            ".gltf",
-            ".glb",
-            ".3mf",
-            ".step"
+            "image/*",
+            "video/*",
+            "application/pdf",
+            "model/*",
+            "audio/*"
           ]
         }
       ]
     }
   },
+
   "file_handlers": [
     {
-      "action": "/index.html?mode=analyze",
+      "action": "/files",
       "accept": {
-        "text/*": [".txt", ".md", ".json", ".csv"],
-        "application/pdf": [".pdf"],
-        "model/stl": [".stl"],
-        "model/obj": [".obj"],
-        "model/gltf+json": [".gltf"],
-        "model/gltf-binary": [".glb"],
-        "model/3mf": [".3mf"],
-        "application/step": [".step", ".stp"]
+        "image/*": [
+          ".png",
+          ".jpg",
+          ".jpeg",
+          ".webp",
+          ".gif",
+          ".svg"
+        ],
+        "application/pdf": [
+          ".pdf"
+        ],
+        "text/plain": [
+          ".txt",
+          ".md"
+        ],
+        "model/*": [
+          ".obj",
+          ".glb",
+          ".gltf",
+          ".stl",
+          ".fbx"
+        ],
+        "audio/*": [
+          ".mp3",
+          ".wav",
+          ".ogg"
+        ],
+        "video/*": [
+          ".mp4",
+          ".webm"
+        ]
       }
     }
   ],
+
   "scope_extensions": [
-    { "origin": "https://ganjagoddessai.com" },
-    { "origin": "https://ganjagoddessai.ai" },
-    { "origin": "https://thetekwhisperer.com" },
-    { "origin": "https://socket.pothub.io" }
-  ],
-  "related_applications": [],
-  "prefer_related_applications": false,
-  "launch_handler": {
-    "client_mode": ["focus-existing", "auto"]
-  },
-  "edge_side_panel": {
-    "preferred_width": 450
-  },
-  "widgets": [
     {
-      "name": "ganjagoddessai Tracker",
-      "description": "Live status of your agentic marketplace orders.",
-      "tag": "delivery-widget",
-      "template": "widget-template",
-      "data": "widget-data",
-      "type": "application/json",
-      "auth": false
+      "origin": "https://ganjagoddessai.com"
     },
     {
-      "name": "Daily Ganja Wisdom",
-      "description": "Tips from the Guru to elevate your hustle.",
-      "tag": "wisdom-widget",
-      "template": "wisdom-template"
+      "origin": "https://cdn.ganjagoddessai.com"
     },
     {
-      "name": "Design Studio Quick-Launch",
-      "description": "Jump straight into your 3D canvas.",
-      "tag": "design-widget",
-      "template": "design-template"
+      "origin": "https://api.ganjagoddessai.com"
     }
   ],
-  "capture_links": "existing-client-navigate",
-  "permissions": [
-    "audio-capture",
-    "video-capture",
-    "display-capture",
-    "geolocation",
-    "bluetooth",
-    "nfc",
-    "usb",
-    "serial",
-    "camera",
-    "microphone",
-    "window-management",
-    "accelerometer",
-    "gyroscope",
-    "magnetometer",
-    "clipboard-read",
-    "clipboard-write",
-    "payment"
-  ],
-  "description_l10n": {
-    "en-GB": "The world's leading AI-powered cannabis concierge and autonomous marketplace.",
-    "es": "El primer mercado de cannabis del mundo controlado por voz y potenciado por IA.",
-    "fr": "Le premier concierge de cannabis au monde alimenté par l'IA et marché autonome.",
-    "de": "Der weltweit erste KI-gesteuerte Cannabis-Concierge und autonome Marktplatz."
+
+  "permissions_policy": {
+    "camera": ["self"],
+    "microphone": ["self"],
+    "geolocation": ["self"],
+    "fullscreen": ["self"],
+    "xr-spatial-tracking": ["self"],
+    "usb": ["self"],
+    "screen-wake-lock": ["self"],
+    "clipboard-read": ["self"],
+    "clipboard-write": ["self"],
+    "gyroscope": ["self"],
+    "accelerometer": ["self"],
+    "payment": ["self"],
+    "notifications": ["self"]
   },
-  "lock_screen": {
-    "start_url": "/index.html?mode=lockscreen"
+
+  "background": {
+    "theme": "orbital-smoke-neural-grid",
+    "particles": true,
+    "dynamic_lighting": true,
+    "shader_pipeline": "webgl2",
+    "parallax_depth": true
   },
-  "note_taking": {
-    "new_note_url": "/index.html?mode=new_note"
+
+  "ai_system": {
+    "default_persona": "ganjagoddess",
+    "voice_enabled": true,
+    "memory_mode": "persistent",
+    "emotion_engine": true,
+    "intent_detection": true,
+    "semantic_navigation": true,
+    "predictive_suggestions": true,
+    "multi_agent_mode": true
   },
-  "handle_links": "preferred",
-  "user_agent_override": "ganjagoddessaiSocket/1.0",
-  "edge_overlay": {
-    "visible": true
+
+  "commerce": {
+    "ghost_mode": true,
+    "dropshipping": true,
+    "eco_friendly_only": true,
+    "3dpod_enabled": true,
+    "affiliate_engine": true,
+    "dynamic_pricing": true,
+    "smart_upsells": true,
+    "autonomous_recommendations": true
+  },
+
+  "xr_features": {
+    "ar_enabled": true,
+    "vr_enabled": true,
+    "webxr_enabled": true,
+    "hand_tracking": true,
+    "spatial_audio": true,
+    "3d_environment": true
+  },
+
+  "performance": {
+    "adaptive_rendering": true,
+    "low_power_mode": true,
+    "gpu_acceleration": true,
+    "lazy_loading": true,
+    "offline_shell": true,
+    "streaming_assets": true
   }
 }

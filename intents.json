@@ -1,0 +1,1737 @@
+```json id="intent_expansion_v2"
+{
+  "version": "1.1",
+  "domain": "GanjaGoddessAI Intent Classification System",
+  "system_level": {
+    "intent_engine_type": "multi-agent semantic routing engine",
+    "execution_model": "hybrid sequential + parallel agent orchestration",
+    "context_window_policy": "dynamic expansion based on intent complexity",
+    "routing_strategy": "confidence weighted multi-agent arbitration",
+    "memory_integration": "vector + episodic + session hybrid memory"
+  },
+  "intents": [
+
+    {
+      "intent": "greeting",
+      "execution_priority": 1,
+      "agent_routing": ["conversation_agent"],
+      "latency_class": "ultra_low",
+      "state_dependency": "session_boot_required",
+      "context_reinforcement": {
+        "profile_embedding_boost": true,
+        "recent_interaction_weight": 0.3
+      },
+      "response_generation_mode": "lightweight_streaming",
+      "system_hooks": {
+        "telemetry_event": "session_start_logged",
+        "ui_state": "idle_to_active_transition"
+      },
+      "monetization_signal": "none",
+
+      "intent_expansions": {
+        "sub_intents": [
+          "casual_greeting",
+          "returning_user_greeting",
+          "contextual_reengagement",
+          "voice_activation_greeting"
+        ],
+        "emotional_variants": [
+          "friendly",
+          "energetic",
+          "calm",
+          "playful"
+        ],
+        "response_modes": [
+          "static_reply",
+          "dynamic_persona_reply",
+          "voice_welcome_sequence"
+        ]
+      }
+    },
+
+    {
+      "intent": "goodbye",
+      "execution_priority": 1,
+      "agent_routing": ["memory_agent", "analytics_agent"],
+      "state_dependency": "session_active_required",
+      "context_reinforcement": {
+        "session_summarization": true,
+        "behavior_snapshot_capture": true
+      },
+      "response_generation_mode": "summarized_stateful_output",
+      "system_hooks": {
+        "telemetry_event": "session_close_logged",
+        "data_pipeline": "memory_compaction_triggered"
+      },
+      "monetization_signal": "session_value_analysis",
+
+      "intent_expansions": {
+        "sub_intents": [
+          "soft_exit",
+          "hard_exit",
+          "session_pause",
+          "return_later_intent"
+        ],
+        "memory_actions": [
+          "final_session_summary",
+          "preference_update",
+          "conversion_history_flush"
+        ],
+        "ui_actions": [
+          "farewell_animation",
+          "state_cleanup_transition",
+          "session_save_indicator"
+        ]
+      }
+    },
+
+    {
+      "intent": "product_search",
+      "execution_priority": 8,
+      "agent_routing": ["commerce_agent", "ranking_agent", "pricing_agent"],
+      "ranking_pipeline": {
+        "multi_factor_score": true,
+        "signals": ["price", "availability", "user_affinity", "conversion_probability", "trend_velocity"],
+        "real_time_reordering": true
+      },
+      "context_dependency_layer": {
+        "user_purchase_history": true,
+        "geo_availability": true,
+        "legal_compliance_filter": true
+      },
+      "monetization_system": {
+        "affiliate_weighting": true,
+        "dynamic_commission_scoring": true,
+        "conversion_optimization_model": "active"
+      },
+      "system_hooks": {
+        "telemetry_event": "product_search_query_logged",
+        "analytics_stream": "commerce_funnel_entry"
+      },
+
+      "intent_expansions": {
+        "search_modes": [
+          "keyword_search",
+          "semantic_search",
+          "mood_based_search",
+          "image_based_search",
+          "voice_query_search"
+        ],
+        "ranking_variants": [
+          "price_priority",
+          "quality_priority",
+          "conversion_priority",
+          "trend_priority",
+          "personal_affinity_priority"
+        ],
+        "result_types": [
+          "product_cards",
+          "ar_previews",
+          "bundles",
+          "substitutes",
+          "upsells"
+        ]
+      }
+    },
+
+    {
+      "intent": "budtender_recommendation",
+      "execution_priority": 10,
+      "agent_routing": ["budtender_agent", "mood_analysis_agent", "recommendation_engine"],
+      "decision_model": {
+        "multi_dimensional_scoring": true,
+        "factors": ["mood", "tolerance", "time_of_day", "past_effects", "user_sentiment"],
+        "explainability_mode": "enabled"
+      },
+      "context_dependency_layer": {
+        "behavioral_embedding_required": true,
+        "session_mood_vector": true
+      },
+      "response_enhancement": {
+        "personalization_depth": "high",
+        "persuasion_model": "soft_recommendation_engine"
+      },
+      "system_hooks": {
+        "telemetry_event": "recommendation_generated",
+        "ai_learning_signal": "preference_update"
+      },
+
+      "intent_expansions": {
+        "recommendation_types": [
+          "strain_based",
+          "effect_based",
+          "budget_based",
+          "experience_based",
+          "time_based"
+        ],
+        "mood_vectors": [
+          "relaxed",
+          "energetic",
+          "creative",
+          "sleepy",
+          "social"
+        ],
+        "explanation_modes": [
+          "scientific",
+          "casual",
+          "storytelling",
+          "minimal"
+        ]
+      }
+    },
+
+    {
+      "intent": "design_request",
+      "execution_priority": 9,
+      "agent_routing": ["design_agent", "3d_renderer", "ar_pipeline"],
+      "generation_pipeline": {
+        "multi_stage_generation": true,
+        "stages": ["concept", "mesh", "render", "preview", "export"],
+        "asset_types": ["3d_model", "ar_scene", "print_file"]
+      },
+      "monetization_hooks": {
+        "print_on_demand_activation": true,
+        "asset_market_listing": true
+      },
+      "system_hooks": {
+        "telemetry_event": "design_generation_triggered",
+        "gpu_usage_flag": "high_compute_task"
+      },
+
+      "intent_expansions": {
+        "design_modes": [
+          "3d_model_creation",
+          "ar_object_generation",
+          "product_mockup",
+          "branding_assets",
+          "packaging_design"
+        ],
+        "output_formats": [
+          "glb",
+          "gltf",
+          "obj",
+          "png_mockup",
+          "webxr_scene"
+        ],
+        "iteration_modes": [
+          "single_generate",
+          "iterative_refinement",
+          "ai_collaborative_design"
+        ]
+      }
+    },
+
+    {
+      "intent": "checkout_purchase",
+      "execution_priority": 12,
+      "agent_routing": ["commerce_agent", "payment_gateway_agent", "fraud_detection_agent"],
+      "security_layer": {
+        "fraud_model_active": true,
+        "geo_validation_required": true,
+        "risk_scoring": "real_time"
+      },
+      "transaction_flow": {
+        "atomic_checkout": true,
+        "rollback_support": true,
+        "multi_gateway_fallback": true
+      },
+      "system_hooks": {
+        "telemetry_event": "transaction_attempt_logged",
+        "revenue_tracking": "real_time"
+      },
+
+      "intent_expansions": {
+        "payment_modes": [
+          "one_click_checkout",
+          "multi_step_checkout",
+          "subscription_checkout",
+          "split_payment",
+          "crypto_checkout"
+        ],
+        "fraud_levels": [
+          "low_risk",
+          "medium_risk",
+          "high_risk_block",
+          "manual_review"
+        ],
+        "post_purchase_flows": [
+          "upsell_offer",
+          "loyalty_points_award",
+          "delivery_tracking_activation"
+        ]
+      }
+    }
+
+  ]
+}
+
+{
+  "additional_intents": [
+
+    {
+      "intent": "cart_management",
+      "execution_priority": 6,
+      "agent_routing": ["cart_agent", "pricing_sync_agent"],
+      "state_model": {
+        "cart_persistence": true,
+        "real_time_price_sync": true
+      },
+      "system_hooks": {
+        "telemetry_event": "cart_modified",
+        "conversion_tracking": "updated"
+      },
+      "intent_expansions": {
+
+        "cart_actions": [
+          "add_item",
+          "remove_item",
+          "update_quantity",
+          "clear_cart",
+          "save_for_later"
+        ],ppppppppppp
+        "sync_modes": [
+          "real_time_sync",
+          "batch_sync",
+          "offline_sync_queue",
+          "multi_device_sync",
+          "cross_session_sync"
+        ],
+        "cart_optimization": [
+          "bundle_suggestions",
+          "discount_application",
+          "upsell_injection",
+          "cross_sell_mapping",
+          "abandoned_cart_recovery"
+        ]
+      }
+    },
+
+    {
+      "intent": "delivery_tracking",
+      "execution_priority": 7,
+      "agent_routing": ["logistics_agent", "geo_tracking_agent"],
+      "tracking_system": {
+        "live_gps_stream": true,
+        "eta_prediction_model": true,
+        "delivery_risk_scoring": true
+      },
+      "system_hooks": {
+        "telemetry_event": "delivery_lookup",
+        "real_time_stream": "enabled"
+      },
+      "intent_expansions": {
+        "tracking_modes": [
+          "real_time_map_tracking",
+          "eta_only_tracking",
+          "driver_status_tracking",
+          "warehouse_stage_tracking",
+          "delivery_history_tracking"
+        ],
+        "notification_types": [
+          "sms_updates",
+          "push_notifications",
+          "email_updates",
+          "in_app_alerts",
+          "voice_notifications"
+        ],
+        "exception_handling": [
+          "delayed_delivery_detection",
+          "route_recalculation",
+          "failed_delivery_retry",
+          "address_verification_request",
+          "support_agent_handoff"
+        ]
+      }
+    },
+
+    {
+      "intent": "pricing_inquiry",
+      "execution_priority": 6,
+      "agent_routing": ["pricing_engine", "market_analysis_agent"],
+      "pricing_model": {
+        "dynamic_pricing": true,
+        "competitor_indexing": true,
+        "conversion_optimization": true
+      },
+      "system_hooks": {
+        "telemetry_event": "pricing_query_logged",
+        "revenue_signal": "intent_to_purchase_detected"
+      },
+      "intent_expansions": {
+        "pricing_modes": [
+          "base_price_lookup",
+          "discounted_price_lookup",
+          "bulk_pricing",
+          "subscription_pricing",
+          "regional_pricing"
+        ],
+        "comparison_modes": [
+          "competitor_comparison",
+          "historical_price_trend",
+          "best_value_analysis",
+          "budget_matching",
+          "premium_vs_budget_split"
+        ],
+        "pricing_actions": [
+          "coupon_generation",
+          "dynamic_discount_offer",
+          "bundle_creation",
+          "loyalty_discount_application",
+          "price_alert_subscription"
+        ]
+      }
+    },
+
+    {
+      "intent": "account_management",
+      "execution_priority": 5,
+      "agent_routing": ["auth_agent", "user_profile_agent"],
+      "security_model": {
+        "multi_factor_required": true,
+        "session_validation": true,
+        "role_based_access": true
+      },
+      "system_hooks": {
+        "telemetry_event": "account_modification_attempt",
+        "security_audit": "logged"
+      },
+      "intent_expansions": {
+        "account_actions": [
+          "update_profile",
+          "change_password",
+          "delete_account",
+          "update_preferences",
+          "manage_devices"
+        ],
+        "security_modes": [
+          "password_auth",
+          "biometric_auth",
+          "two_factor_auth",
+          "session_revalidation",
+          "trusted_device_management"
+        ],
+        "privacy_controls": [
+          "data_export_request",
+          "data_deletion_request",
+          "ad_personalization_toggle",
+          "tracking_opt_out",
+          "visibility_settings"
+        ]
+      }
+    },
+
+    {
+      "intent": "ai_chat_general",
+      "execution_priority": 3,
+      "agent_routing": ["conversation_agent", "knowledge_agent"],
+      "response_model": {
+        "context_expansion": true,
+        "multi_turn_memory": true,
+        "adaptive_tone": true
+      },
+      "system_hooks": {
+        "telemetry_event": "open_chat_interaction",
+        "engagement_tracking": "active"
+      },
+      "intent_expansions": {
+        "chat_modes": [
+          "casual_conversation",
+          "deep_explanation",
+          "brainstorming_mode",
+          "story_generation",
+          "advice_mode"
+        ],
+        "tone_variants": [
+          "formal",
+          "friendly",
+          "humorous",
+          "motivational",
+          "technical"
+        ],
+        "interaction_modes": [
+          "single_response",
+          "multi_turn_dialogue",
+          "guided_assistant_flow",
+          "interactive_learning",
+          "role_play_mode"
+        ]
+      }
+    },
+
+    {
+      "intent": "voice_command",
+      "execution_priority": 9,
+      "agent_routing": ["speech_to_text_agent", "intent_router"],
+      "audio_pipeline": {
+        "streaming_stt": true,
+        "noise_filtering": true,
+        "real_time_parsing": true
+      },
+      "system_hooks": {
+        "telemetry_event": "voice_input_detected",
+        "latency_target": "sub_300ms"
+      },
+      "intent_expansions": {
+        "voice_modes": [
+          "wake_word_activation",
+          "continuous_listening",
+          "push_to_talk",
+          "hands_free_mode",
+          "ambient_listening_mode"
+        ],
+        "speech_processing": [
+          "accent_adaptation",
+          "language_detection",
+          "emotion_detection",
+          "intent_extraction_streaming",
+          "noise_cancellation_enhancement"
+        ],
+        "command_types": [
+          "navigation_command",
+          "purchase_command",
+          "search_command",
+          "system_control_command",
+          "media_control_command"
+        ]
+      }
+    },
+
+    {
+      "intent": "image_analysis",
+      "execution_priority": 8,
+      "agent_routing": ["vision_agent", "object_detection_engine"],
+      "vision_pipeline": {
+        "object_recognition": true,
+        "product_identification": true,
+        "contextual_inference": true
+      },
+      "system_hooks": {
+        "telemetry_event": "image_uploaded",
+        "gpu_inference_flag": "enabled"
+      },
+      "intent_expansions": {
+        "vision_modes": [
+          "object_detection",
+          "product_identification",
+          "text_extraction_ocr",
+          "scene_understanding",
+          "brand_recognition"
+        ],
+        "analysis_depth": [
+          "surface_level",
+          "detailed_analysis",
+          "multi_object_relationship_mapping",
+          "material_detection",
+          "quality_assessment"
+        ],
+        "output_formats": [
+          "structured_report",
+          "visual_annotations",
+          "recommendation_output",
+          "ar_overlay_mapping",
+          "comparison_results"
+        ]
+      }
+    },
+
+    {
+      "intent": "legal_information",
+      "execution_priority": 11,
+      "agent_routing": ["compliance_agent", "legal_knowledge_engine"],
+      "compliance_layer": {
+        "jurisdiction_mapping": true,
+        "policy_filtering": true,
+        "risk_flagging": true
+      },
+      "system_hooks": {
+        "telemetry_event": "compliance_query",
+        "audit_log": "enabled"
+      },
+      "intent_expansions": {
+        "legal_modes": [
+          "compliance_check",
+          "jurisdiction_explanation",
+          "age_restriction_validation",
+          "product_legality_check",
+          "usage_guidance"
+        ],
+        "risk_levels": [
+          "low_risk_info",
+          "moderate_risk_warning",
+          "high_risk_blocked",
+          "requires_human_review",
+          "restricted_content"
+        ],
+        "response_styles": [
+          "formal_legal",
+          "simplified_explanation",
+          "step_by_step_guidance",
+          "disclaimer_heavy",
+          "neutral_informational"
+        ]
+      }
+    },
+
+    {
+      "intent": "ar_view_request",
+      "execution_priority": 10,
+      "agent_routing": ["xr_agent", "3d_render_engine"],
+      "xr_pipeline": {
+        "webxr_support": true,
+        "real_time_rendering": true,
+        "scene_interactivity": true
+      },
+      "system_hooks": {
+        "telemetry_event": "xr_session_started",
+        "gpu_render_flag": "high_priority"
+      },
+      "intent_expansions": {
+        "ar_modes": [
+          "product_preview_ar",
+          "environment_placement",
+          "scale_simulation",
+          "interactive_3d_view",
+          "virtual_showroom"
+        ],
+        "interaction_types": [
+          "rotate_object",
+          "resize_object",
+          "move_in_space",
+          "material_swap",
+          "lighting_adjustment"
+        ],
+        "device_support": [
+          "mobile_ar",
+          "desktop_webxr",
+          "vr_headset_mode",
+          "tablet_ar_mode",
+          "smart_glasses_mode"
+        ]
+      }
+    }
+
+  ]
+}
+```json id="intent_expansion_additional_intents"
+{
+  "additional_intents": [
+
+    {
+      "intent": "cart_management",
+      "execution_priority": 6,
+      "agent_routing": ["cart_agent", "pricing_sync_agent"],
+      "state_model": {
+        "cart_persistence": true,
+        "real_time_price_sync": true
+      },
+      "system_hooks": {
+        "telemetry_event": "cart_modified",
+        "conversion_tracking": "updated"
+      },
+      "intent_expansions": {
+        "cart_actions": [
+          "add_item",
+          "remove_item",
+          "update_quantity",
+          "clear_cart",
+          "save_for_later"
+        ],
+        "sync_modes": [
+          "real_time_sync",
+          "batch_sync",
+          "offline_sync_queue",
+          "multi_device_sync",
+          "cross_session_sync"
+        ],
+        "cart_optimization": [
+          "bundle_suggestions",
+          "discount_application",
+          "upsell_injection",
+          "cross_sell_mapping",
+          "abandoned_cart_recovery"
+        ]
+      }
+    },
+
+    {
+      "intent": "delivery_tracking",
+      "execution_priority": 7,
+      "agent_routing": ["logistics_agent", "geo_tracking_agent"],
+      "tracking_system": {
+        "live_gps_stream": true,
+        "eta_prediction_model": true,
+        "delivery_risk_scoring": true
+      },
+      "system_hooks": {
+        "telemetry_event": "delivery_lookup",
+        "real_time_stream": "enabled"
+      },
+      "intent_expansions": {
+        "tracking_modes": [
+          "real_time_map_tracking",
+          "eta_only_tracking",
+          "driver_status_tracking",
+          "warehouse_stage_tracking",
+          "delivery_history_tracking"
+        ],
+        "notification_types": [
+          "sms_updates",
+          "push_notifications",
+          "email_updates",
+          "in_app_alerts",
+          "voice_notifications"
+        ],
+        "exception_handling": [
+          "delayed_delivery_detection",
+          "route_recalculation",
+          "failed_delivery_retry",
+          "address_verification_request",
+          "support_agent_handoff"
+        ]
+      }
+    },
+
+    {
+      "intent": "pricing_inquiry",
+      "execution_priority": 6,
+      "agent_routing": ["pricing_engine", "market_analysis_agent"],
+      "pricing_model": {
+        "dynamic_pricing": true,
+        "competitor_indexing": true,
+        "conversion_optimization": true
+      },
+      "system_hooks": {
+        "telemetry_event": "pricing_query_logged",
+        "revenue_signal": "intent_to_purchase_detected"
+      },
+      "intent_expansions": {
+        "pricing_modes": [
+          "base_price_lookup",
+          "discounted_price_lookup",
+          "bulk_pricing",
+          "subscription_pricing",
+          "regional_pricing"
+        ],
+        "comparison_modes": [
+          "competitor_comparison",
+          "historical_price_trend",
+          "best_value_analysis",
+          "budget_matching",
+          "premium_vs_budget_split"
+        ],
+        "pricing_actions": [
+          "coupon_generation",
+          "dynamic_discount_offer",
+          "bundle_creation",
+          "loyalty_discount_application",
+          "price_alert_subscription"
+        ]
+      }
+    },
+
+    {
+      "intent": "account_management",
+      "execution_priority": 5,
+      "agent_routing": ["auth_agent", "user_profile_agent"],
+      "security_model": {
+        "multi_factor_required": true,
+        "session_validation": true,
+        "role_based_access": true
+      },
+      "system_hooks": {
+        "telemetry_event": "account_modification_attempt",
+        "security_audit": "logged"
+      },
+      "intent_expansions": {
+        "account_actions": [
+          "update_profile",
+          "change_password",
+          "delete_account",
+          "update_preferences",
+          "manage_devices"
+        ],
+        "security_modes": [
+          "password_auth",
+          "biometric_auth",
+          "two_factor_auth",
+          "session_revalidation",
+          "trusted_device_management"
+        ],
+        "privacy_controls": [
+          "data_export_request",
+          "data_deletion_request",
+          "ad_personalization_toggle",
+          "tracking_opt_out",
+          "visibility_settings"
+        ]
+      }
+    },
+
+    {
+      "intent": "ai_chat_general",
+      "execution_priority": 3,
+      "agent_routing": ["conversation_agent", "knowledge_agent"],
+      "response_model": {
+        "context_expansion": true,
+        "multi_turn_memory": true,
+        "adaptive_tone": true
+      },
+      "system_hooks": {
+        "telemetry_event": "open_chat_interaction",
+        "engagement_tracking": "active"
+      },
+      "intent_expansions": {
+        "chat_modes": [
+          "casual_conversation",
+          "deep_explanation",
+          "brainstorming_mode",
+          "story_generation",
+          "advice_mode"
+        ],
+        "tone_variants": [
+          "formal",
+          "friendly",
+          "humorous",
+          "motivational",
+          "technical"
+        ],
+        "interaction_modes": [
+          "single_response",
+          "multi_turn_dialogue",
+          "guided_assistant_flow",
+          "interactive_learning",
+          "role_play_mode"
+        ]
+      }
+    },
+
+    {
+      "intent": "voice_command",
+      "execution_priority": 9,
+      "agent_routing": ["speech_to_text_agent", "intent_router"],
+      "audio_pipeline": {
+        "streaming_stt": true,
+        "noise_filtering": true,
+        "real_time_parsing": true
+      },
+      "system_hooks": {
+        "telemetry_event": "voice_input_detected",
+        "latency_target": "sub_300ms"
+      },
+      "intent_expansions": {
+        "voice_modes": [
+          "wake_word_activation",
+          "continuous_listening",
+          "push_to_talk",
+          "hands_free_mode",
+          "ambient_listening_mode"
+        ],
+        "speech_processing": [
+          "accent_adaptation",
+          "language_detection",
+          "emotion_detection",
+          "intent_extraction_streaming",
+          "noise_cancellation_enhancement"
+        ],
+        "command_types": [
+          "navigation_command",
+          "purchase_command",
+          "search_command",
+          "system_control_command",
+          "media_control_command"
+        ]
+      }
+    },
+
+    {
+      "intent": "image_analysis",
+      "execution_priority": 8,
+      "agent_routing": ["vision_agent", "object_detection_engine"],
+      "vision_pipeline": {
+        "object_recognition": true,
+        "product_identification": true,
+        "contextual_inference": true
+      },
+      "system_hooks": {
+        "telemetry_event": "image_uploaded",
+        "gpu_inference_flag": "enabled"
+      },
+      "intent_expansions": {
+        "vision_modes": [
+          "object_detection",
+          "product_identification",
+          "text_extraction_ocr",
+          "scene_understanding",
+          "brand_recognition"
+        ],
+        "analysis_depth": [
+          "surface_level",
+          "detailed_analysis",
+          "multi_object_relationship_mapping",
+          "material_detection",
+          "quality_assessment"
+        ],
+        "output_formats": [
+          "structured_report",
+          "visual_annotations",
+          "recommendation_output",
+          "ar_overlay_mapping",
+          "comparison_results"
+        ]
+      }
+    },
+
+    {
+      "intent": "legal_information",
+      "execution_priority": 11,
+      "agent_routing": ["compliance_agent", "legal_knowledge_engine"],
+      "compliance_layer": {
+        "jurisdiction_mapping": true,
+        "policy_filtering": true,
+        "risk_flagging": true
+      },
+      "system_hooks": {
+        "telemetry_event": "compliance_query",
+        "audit_log": "enabled"
+      },
+      "intent_expansions": {
+        "legal_modes": [
+          "compliance_check",
+          "jurisdiction_explanation",
+          "age_restriction_validation",
+          "product_legality_check",
+          "usage_guidance"
+        ],
+        "risk_levels": [
+          "low_risk_info",
+          "moderate_risk_warning",
+          "high_risk_blocked",
+          "requires_human_review",
+          "restricted_content"
+        ],
+        "response_styles": [
+          "formal_legal",
+          "simplified_explanation",
+          "step_by_step_guidance",
+          "disclaimer_heavy",
+          "neutral_informational"
+        ]
+      }
+    },
+
+    {
+      "intent": "ar_view_request",
+      "execution_priority": 10,
+      "agent_routing": ["xr_agent", "3d_render_engine"],
+      "xr_pipeline": {
+        "webxr_support": true,
+        "real_time_rendering": true,
+        "scene_interactivity": true
+      },
+      "system_hooks": {
+        "telemetry_event": "xr_session_started",
+        "gpu_render_flag": "high_priority"
+      },
+      "intent_expansions": {
+        "ar_modes": [
+          "product_preview_ar",
+          "environment_placement",
+          "scale_simulation",
+          "interactive_3d_view",
+          "virtual_showroom"
+        ],
+        "interaction_types": [
+          "rotate_object",
+          "resize_object",
+          "move_in_space",
+          "material_swap",
+          "lighting_adjustment"
+        ],
+        "device_support": [
+          "mobile_ar",
+          "desktop_webxr",
+          "vr_headset_mode",
+          "tablet_ar_mode",
+          "smart_glasses_mode"
+        ]
+      }
+    }
+
+  ]
+}
+```
+{
+  "additional_intents": [
+
+    {
+      "intent": "recommendation_exploration",
+      "execution_priority": 7,
+      "agent_routing": ["recommendation_engine", "behavioral_model_agent"],
+      "system_hooks": {
+        "telemetry_event": "recommendation_exploration_started",
+        "analytics_stream": "interest_graph_update"
+      },
+      "intent_expansions": {
+        "exploration_modes": [
+          "discovery_mode",
+          "similar_item_exploration",
+          "unexpected_recommendations",
+          "trend_based_discovery",
+          "user_affinity_expansion"
+        ],
+        "ranking_strategies": [
+          "serendipity_boosted",
+          "diversity_maximization",
+          "novelty_weighted",
+          "behavior_cluster_matching",
+          "cross_category_mapping"
+        ],
+        "output_styles": [
+          "carousel_view",
+          "story_based_recommendation",
+          "comparison_grid",
+          "ai_explained_ranking",
+          "immersive_ar_preview_list"
+        ]
+      }
+    },
+
+    {
+      "intent": "subscription_management",
+      "execution_priority": 6,
+      "agent_routing": ["billing_agent", "subscription_orchestrator"],
+      "system_hooks": {
+        "telemetry_event": "subscription_event_triggered",
+        "billing_pipeline": "subscription_state_update"
+      },
+      "intent_expansions": {
+        "subscription_actions": [
+          "create_subscription",
+          "cancel_subscription",
+          "pause_subscription",
+          "upgrade_plan",
+          "downgrade_plan"
+        ],
+        "billing_modes": [
+          "monthly_billing",
+          "yearly_billing",
+          "usage_based_billing",
+          "tiered_pricing",
+          "hybrid_billing"
+        ],
+        "retention_strategies": [
+          "winback_offers",
+          "discount_retention",
+          "feature_unlock_incentives",
+          "loyalty_rewards",
+          "pause_suggestions"
+        ]
+      }
+    },
+
+    {
+      "intent": "notification_management",
+      "execution_priority": 4,
+      "agent_routing": ["notification_agent", "event_stream_processor"],
+      "system_hooks": {
+        "telemetry_event": "notification_event_triggered",
+        "delivery_pipeline": "multi_channel_dispatch"
+      },
+      "intent_expansions": {
+        "notification_types": [
+          "system_alerts",
+          "marketing_notifications",
+          "order_updates",
+          "behavior_based_alerts",
+          "ai_generated_suggestions"
+        ],
+        "delivery_channels": [
+          "push_notifications",
+          "email_notifications",
+          "sms_notifications",
+          "in_app_notifications",
+          "voice_notifications"
+        ],
+        "control_modes": [
+          "mute_all",
+          "priority_only",
+          "category_filtering",
+          "smart_ai_filtering",
+          "schedule_based_delivery"
+        ]
+      }
+    },
+
+    {
+      "intent": "search_general_information",
+      "execution_priority": 5,
+      "agent_routing": ["knowledge_agent", "web_retrieval_agent"],
+      "system_hooks": {
+        "telemetry_event": "general_search_triggered",
+        "retrieval_pipeline": "semantic_web_search"
+      },
+      "intent_expansions": {
+        "search_types": [
+          "fact_lookup",
+          "how_to_query",
+          "comparison_search",
+          "definition_search",
+          "trending_information_search"
+        ],
+        "result_formats": [
+          "summarized_answer",
+          "step_by_step_guide",
+          "structured_data_response",
+          "interactive_explanation",
+          "ai_enhanced_summary"
+        ],
+        "source_prioritization": [
+          "authority_weighted",
+          "recency_weighted",
+          "relevance_weighted",
+          "multi_source_merge",
+          "ai_verified_sources"
+        ]
+      }
+    },
+
+    {
+      "intent": "media_generation_request",
+      "execution_priority": 9,
+      "agent_routing": ["media_generation_agent", "creative_render_engine"],
+      "system_hooks": {
+        "telemetry_event": "media_generation_triggered",
+        "compute_usage": "gpu_intensive_task"
+      },
+      "intent_expansions": {
+        "media_types": [
+          "image_generation",
+          "video_generation",
+          "audio_generation",
+          "3d_model_generation",
+          "animation_creation"
+        ],
+        "style_modes": [
+          "photorealistic",
+          "cartoon_style",
+          "cinematic_style",
+          "abstract_art",
+          "futuristic_ui_style"
+        ],
+        "output_formats": [
+          "png",
+          "mp4",
+          "wav",
+          "glb",
+          "gif"
+        ]
+      }
+    },
+
+    {
+      "intent": "workflow_automation",
+      "execution_priority": 8,
+      "agent_routing": ["automation_agent", "task_orchestrator"],
+      "system_hooks": {
+        "telemetry_event": "automation_flow_created",
+        "execution_mode": "scheduled_or_event_triggered"
+      },
+      "intent_expansions": {
+        "automation_types": [
+          "task_scheduling",
+          "data_pipeline_automation",
+          "marketing_automation",
+          "commerce_automation",
+          "ai_agent_chaining"
+        ],
+        "trigger_modes": [
+          "time_based_trigger",
+          "event_based_trigger",
+          "user_action_trigger",
+          "data_change_trigger",
+          "ai_prediction_trigger"
+        ],
+        "execution_behaviors": [
+          "parallel_execution",
+          "sequential_execution",
+          "conditional_branching",
+          "loop_execution",
+          "failover_execution"
+        ]
+      }
+    },
+
+    {
+      "intent": "data_export_request",
+      "execution_priority": 6,
+      "agent_routing": ["data_agent", "privacy_compliance_agent"],
+      "system_hooks": {
+        "telemetry_event": "data_export_requested",
+        "compliance_audit": "gdpr_or_equivalent_check"
+      },
+      "intent_expansions": {
+        "export_formats": [
+          "json_export",
+          "csv_export",
+          "pdf_report",
+          "api_data_stream",
+          "database_snapshot"
+        ],
+        "data_scope": [
+          "full_user_profile",
+          "transaction_history",
+          "behavioral_data",
+          "ai_interaction_logs",
+          "analytics_summary"
+        ],
+        "delivery_methods": [
+          "download_link",
+          "email_delivery",
+          "secure_api_endpoint",
+          "encrypted_archive",
+          "cloud_storage_transfer"
+        ]
+      }
+    },
+
+    {
+      "intent": "system_debug_request",
+      "execution_priority": 10,
+      "agent_routing": ["diagnostic_agent", "system_monitoring_agent"],
+      "system_hooks": {
+        "telemetry_event": "debug_session_started",
+        "logging_mode": "verbose_enabled"
+      },
+      "intent_expansions": {
+        "debug_modes": [
+          "performance_debug",
+          "api_debug",
+          "agent_behavior_debug",
+          "memory_trace_debug",
+          "ui_render_debug"
+        ],
+        "diagnostic_levels": [
+          "light_inspection",
+          "deep_system_scan",
+          "real_time_monitoring",
+          "error_trace_analysis",
+          "predictive_failure_detection"
+        ],
+        "output_formats": [
+          "structured_logs",
+          "visual_debug_dashboard",
+          "error_trace_report",
+          "system_health_score",
+          "agent_behavior_map"
+        ]
+      }
+    }
+
+  ]
+}
+```json id="intent_expansion_v3_additional"
+{
+  "additional_intents": [
+
+    {
+      "intent": "recommendation_exploration",
+      "execution_priority": 7,
+      "agent_routing": ["recommendation_engine", "behavioral_model_agent"],
+      "system_hooks": {
+        "telemetry_event": "recommendation_exploration_started",
+        "analytics_stream": "interest_graph_update"
+      },
+      "intent_expansions": {
+        "exploration_modes": [
+          "discovery_mode",
+          "similar_item_exploration",
+          "unexpected_recommendations",
+          "trend_based_discovery",
+          "user_affinity_expansion"
+        ],
+        "ranking_strategies": [
+          "serendipity_boosted",
+          "diversity_maximization",
+          "novelty_weighted",
+          "behavior_cluster_matching",
+          "cross_category_mapping"
+        ],
+        "output_styles": [
+          "carousel_view",
+          "story_based_recommendation",
+          "comparison_grid",
+          "ai_explained_ranking",
+          "immersive_ar_preview_list"
+        ]
+      }
+    },
+
+    {
+      "intent": "subscription_management",
+      "execution_priority": 6,
+      "agent_routing": ["billing_agent", "subscription_orchestrator"],
+      "system_hooks": {
+        "telemetry_event": "subscription_event_triggered",
+        "billing_pipeline": "subscription_state_update"
+      },
+      "intent_expansions": {
+        "subscription_actions": [
+          "create_subscription",
+          "cancel_subscription",
+          "pause_subscription",
+          "upgrade_plan",
+          "downgrade_plan"
+        ],
+        "billing_modes": [
+          "monthly_billing",
+          "yearly_billing",
+          "usage_based_billing",
+          "tiered_pricing",
+          "hybrid_billing"
+        ],
+        "retention_strategies": [
+          "winback_offers",
+          "discount_retention",
+          "feature_unlock_incentives",
+          "loyalty_rewards",
+          "pause_suggestions"
+        ]
+      }
+    },
+
+    {
+      "intent": "notification_management",
+      "execution_priority": 4,
+      "agent_routing": ["notification_agent", "event_stream_processor"],
+      "system_hooks": {
+        "telemetry_event": "notification_event_triggered",
+        "delivery_pipeline": "multi_channel_dispatch"
+      },
+      "intent_expansions": {
+        "notification_types": [
+          "system_alerts",
+          "marketing_notifications",
+          "order_updates",
+          "behavior_based_alerts",
+          "ai_generated_suggestions"
+        ],
+        "delivery_channels": [
+          "push_notifications",
+          "email_notifications",
+          "sms_notifications",
+          "in_app_notifications",
+          "voice_notifications"
+        ],
+        "control_modes": [
+          "mute_all",
+          "priority_only",
+          "category_filtering",
+          "smart_ai_filtering",
+          "schedule_based_delivery"
+        ]
+      }
+    },
+
+    {
+      "intent": "search_general_information",
+      "execution_priority": 5,
+      "agent_routing": ["knowledge_agent", "web_retrieval_agent"],
+      "system_hooks": {
+        "telemetry_event": "general_search_triggered",
+        "retrieval_pipeline": "semantic_web_search"
+      },
+      "intent_expansions": {
+        "search_types": [
+          "fact_lookup",
+          "how_to_query",
+          "comparison_search",
+          "definition_search",
+          "trending_information_search"
+        ],
+        "result_formats": [
+          "summarized_answer",
+          "step_by_step_guide",
+          "structured_data_response",
+          "interactive_explanation",
+          "ai_enhanced_summary"
+        ],
+        "source_prioritization": [
+          "authority_weighted",
+          "recency_weighted",
+          "relevance_weighted",
+          "multi_source_merge",
+          "ai_verified_sources"
+        ]
+      }
+    },
+
+    {
+      "intent": "media_generation_request",
+      "execution_priority": 9,
+      "agent_routing": ["media_generation_agent", "creative_render_engine"],
+      "system_hooks": {
+        "telemetry_event": "media_generation_triggered",
+        "compute_usage": "gpu_intensive_task"
+      },
+      "intent_expansions": {
+        "media_types": [
+          "image_generation",
+          "video_generation",
+          "audio_generation",
+          "3d_model_generation",
+          "animation_creation"
+        ],
+        "style_modes": [
+          "photorealistic",
+          "cartoon_style",
+          "cinematic_style",
+          "abstract_art",
+          "futuristic_ui_style"
+        ],
+        "output_formats": [
+          "png",
+          "mp4",
+          "wav",
+          "glb",
+          "gif"
+        ]
+      }
+    },
+
+    {
+      "intent": "workflow_automation",
+      "execution_priority": 8,
+      "agent_routing": ["automation_agent", "task_orchestrator"],
+      "system_hooks": {
+        "telemetry_event": "automation_flow_created",
+        "execution_mode": "scheduled_or_event_triggered"
+      },
+      "intent_expansions": {
+        "automation_types": [
+          "task_scheduling",
+          "data_pipeline_automation",
+          "marketing_automation",
+          "commerce_automation",
+          "ai_agent_chaining"
+        ],
+        "trigger_modes": [
+          "time_based_trigger",
+          "event_based_trigger",
+          "user_action_trigger",
+          "data_change_trigger",
+          "ai_prediction_trigger"
+        ],
+        "execution_behaviors": [
+          "parallel_execution",
+          "sequential_execution",
+          "conditional_branching",
+          "loop_execution",
+          "failover_execution"
+        ]
+      }
+    },
+
+    {
+      "intent": "data_export_request",
+      "execution_priority": 6,
+      "agent_routing": ["data_agent", "privacy_compliance_agent"],
+      "system_hooks": {
+        "telemetry_event": "data_export_requested",
+        "compliance_audit": "gdpr_or_equivalent_check"
+      },
+      "intent_expansions": {
+        "export_formats": [
+          "json_export",
+          "csv_export",
+          "pdf_report",
+          "api_data_stream",
+          "database_snapshot"
+        ],
+        "data_scope": [
+          "full_user_profile",
+          "transaction_history",
+          "behavioral_data",
+          "ai_interaction_logs",
+          "analytics_summary"
+        ],
+        "delivery_methods": [
+          "download_link",
+          "email_delivery",
+          "secure_api_endpoint",
+          "encrypted_archive",
+          "cloud_storage_transfer"
+        ]
+      }
+    },
+
+    {
+      "intent": "system_debug_request",
+      "execution_priority": 10,
+      "agent_routing": ["diagnostic_agent", "system_monitoring_agent"],
+      "system_hooks": {
+        "telemetry_event": "debug_session_started",
+        "logging_mode": "verbose_enabled"
+      },
+      "intent_expansions": {
+        "debug_modes": [
+          "performance_debug",
+          "api_debug",
+          "agent_behavior_debug",
+          "memory_trace_debug",
+          "ui_render_debug"
+        ],
+        "diagnostic_levels": [
+          "light_inspection",
+          "deep_system_scan",
+          "real_time_monitoring",
+          "error_trace_analysis",
+          "predictive_failure_detection"
+        ],
+        "output_formats": [
+          "structured_logs",
+          "visual_debug_dashboard",
+          "error_trace_report",
+          "system_health_score",
+          "agent_behavior_map"
+        ]
+      }
+    }
+
+  ]
+}
+{
+  "additional_intents": [
+
+    {
+      "intent": "deal_hunting_intent",
+      "execution_priority": 9,
+      "agent_routing": ["pricing_agent", "affiliate_intelligence_agent", "commerce_agent"],
+      "system_hooks": {
+        "telemetry_event": "high_intent_savings_search_detected",
+        "revenue_signal": "high_conversion_affiliate_opportunity"
+      },
+      "intent_expansions": {
+        "deal_modes": [
+          "flash_deal_detection",
+          "lowest_price_across_network",
+          "coupon_stack_analysis",
+          "limited_time_offer_tracking",
+          "geo_based_deal_matching"
+        ],
+        "monetization_vectors": [
+          "affiliate_link_routing",
+          "commission_boost_selection",
+          "sponsored_deal_prioritization",
+          "dynamic_margin_shifting",
+          "conversion_rate_maximization"
+        ],
+        "user_behavior_signals": [
+          "price_sensitivity_high",
+          "purchase_imminence_detected",
+          "deal_comparison_behavior",
+          "cart_abandonment_risk_low",
+          "impulse_buy_probability_high"
+        ]
+      }
+    },
+
+    {
+      "intent": "bundle_creation_intent",
+      "execution_priority": 8,
+      "agent_routing": ["commerce_agent", "product_graph_agent", "pricing_optimizer_agent"],
+      "system_hooks": {
+        "telemetry_event": "bundle_generation_triggered",
+        "revenue_signal": "multi_item_order_increase_detected"
+      },
+      "intent_expansions": {
+        "bundle_types": [
+          "starter_bundle",
+          "premium_bundle",
+          "lifestyle_bundle",
+          "custom_user_bundle",
+          "algorithmically_optimized_bundle"
+        ],
+        "optimization_logic": [
+          "margin_maximization",
+          "conversion_probability_maximization",
+          "cross_sell_intelligence",
+          "inventoryless_affiliate_stacking",
+          "psychological_value_packaging"
+        ],
+        "upsell_behaviors": [
+          "add_more_for_discount",
+          "premium_upgrade_path",
+          "frequently_bought_together",
+          "complementary_product_injection",
+          "cart_value_threshold_push"
+        ]
+      }
+    },
+
+    {
+      "intent": "social_sharing_intent",
+      "execution_priority": 4,
+      "agent_routing": ["social_graph_agent", "content_generation_agent"],
+      "system_hooks": {
+        "telemetry_event": "viral_sharing_triggered",
+        "revenue_signal": "organic_marketing_distribution_active"
+      },
+      "intent_expansions": {
+        "share_targets": [
+          "instagram_story",
+          "tiktok_clip",
+          "twitter_post",
+          "direct_link_share",
+          "community_forum_post"
+        ],
+        "content_generation": [
+          "auto_caption_generation",
+          "viral_hook_creation",
+          "product_visual_rendering",
+          "ai_influencer_post_generation",
+          "branded_story_templates"
+        ],
+        "monetization_paths": [
+          "referral_link_embedding",
+          "affiliate_tracking_links",
+          "viral_coefficient_amplification",
+          "influencer_attribution_tracking",
+          "share_based_rewards"
+        ]
+      }
+    },
+
+    {
+      "intent": "loyalty_engagement_intent",
+      "execution_priority": 5,
+      "agent_routing": ["loyalty_engine_agent", "behavioral_scoring_agent"],
+      "system_hooks": {
+        "telemetry_event": "loyalty_interaction_detected",
+        "revenue_signal": "retention_value_increase"
+      },
+      "intent_expansions": {
+        "engagement_types": [
+          "points_redemption",
+          "tier_progression_check",
+          "reward_unlock_request",
+          "bonus_multiplier_activation",
+          "daily_reward_claim"
+        ],
+        "retention_mechanics": [
+          "streak_rewards",
+          "hidden_rewards_unlock",
+          "exclusive_member_deals",
+          "gamified_progress_tracking",
+          "vip_access_upgrade_paths"
+        ],
+        "monetization_effects": [
+          "increased_ltv_projection",
+          "repeat_purchase_boost",
+          "membership_upgrade_triggers",
+          "premium_subscription_conversion",
+          "re-engagement_campaign_activation"
+        ]
+      }
+    },
+
+    {
+      "intent": "location_based_discovery_intent",
+      "execution_priority": 7,
+      "agent_routing": ["geo_intelligence_agent", "inventory_router_agent"],
+      "system_hooks": {
+        "telemetry_event": "geo_targeted_search_triggered",
+        "revenue_signal": "local_conversion_opportunity"
+      },
+      "intent_expansions": {
+        "geo_modes": [
+          "nearby_availability_scan",
+          "city_based_inventory_matching",
+          "region_restricted_product_filtering",
+          "delivery_zone_optimization",
+          "hyperlocal_deal_targeting"
+        ],
+        "logistics_behaviors": [
+          "fastest_delivery_routing",
+          "lowest_shipping_cost_selection",
+          "local_vendor_preference_boost",
+          "geo_compliance_filtering",
+          "real_time_stock_sync"
+        ],
+        "monetization_vectors": [
+          "local_partner_commission_boost",
+          "geo_based_ad_insertion",
+          "delivery_fee_optimization_margin",
+          "regional_price_variation_model",
+          "high_intent_local_user_priority_routing"
+        ]
+      }
+    },
+
+    {
+      "intent": "education_learning_intent",
+      "execution_priority": 3,
+      "agent_routing": ["knowledge_agent", "curriculum_engine_agent"],
+      "system_hooks": {
+        "telemetry_event": "learning_session_started",
+        "engagement_signal": "high_session_duration_prediction"
+      },
+      "intent_expansions": {
+        "learning_modes": [
+          "step_by_step_guides",
+          "interactive_explanations",
+          "scenario_based_learning",
+          "visual_learning_mode",
+          "ai_tutor_conversation"
+        ],
+        "content_depth": [
+          "beginner",
+          "intermediate",
+          "advanced",
+          "expert_level_breakdown",
+          "technical_deep_dive"
+        ],
+        "monetization_paths": [
+          "premium_course_unlock",
+          "certification_paywall",
+          "expert_consultation_upsell",
+          "educational_subscription_model",
+          "interactive_learning_pack_sales"
+        ]
+      }
+    },
+
+    {
+      "intent": "support_helpdesk_intent",
+      "execution_priority": 6,
+      "agent_routing": ["support_agent", "ticketing_agent", "resolution_engine"],
+      "system_hooks": {
+        "telemetry_event": "support_request_created",
+        "revenue_signal": "retention_protection_active"
+      },
+      "intent_expansions": {
+        "support_types": [
+          "order_issue_resolution",
+          "refund_request_handling",
+          "technical_support",
+          "account_recovery",
+          "delivery_problem_resolution"
+        ],
+        "resolution_modes": [
+          "instant_ai_resolution",
+          "escalation_to_human",
+          "automated_refund_flow",
+          "guided_self_service_fix",
+          "priority_support_routing"
+        ],
+        "business_value_layer": [
+          "churn_reduction",
+          "refund_loss_minimization",
+          "customer_satisfaction_boost",
+          "repeat_purchase_recovery",
+          "negative_feedback_conversion_prevention"
+        ]
+      }
+    }
+
+  ]
+}

@@ -1,0 +1,152 @@
+# SEARCH OPTIMIZATION PROFILE (SOP v3.0)
+# Purpose: Maximize visibility, ranking velocity, and conversion across search engines + AI answer engines
+
+[ENTITY IDENTITY LAYER]
+brand_name: GanjaGoddessAI
+brand_type: hybrid (media + SaaS + e-commerce + AI assistant ecosystem)
+core_entities:
+  - AI assistant ecosystem
+  - cannabis lifestyle platform
+  - AR/VR commerce layer
+  - on-demand digital marketplace
+primary_topic_authority: cannabis AI + immersive commerce + agentic e-commerce systems
+
+[PRIMARY GOALS]
+- Dominate organic search rankings in long-tail + intent-rich queries
+- Capture AI-generated answers (AEO / GEO optimization)
+- Convert impressions into clicks and clicks into transactions
+- Build entity authority, not just keyword rankings
+
+[SEARCH INTENT STRATEGY]
+intent_classes:
+  transactional: "buy", "access", "download", "start", "get"
+  informational: "how", "what is", "why", "guide", "explained"
+  navigational: brand queries + direct platform access
+  conversational_ai: prompts, questions, comparisons, recommendations
+
+priority_order:
+  1. transactional intent (highest revenue)
+  2. conversational AI intent (highest visibility in LLMs)
+  3. informational intent (top-of-funnel authority building)
+  4. navigational intent (brand reinforcement)
+
+[CONTENT ENGINE RULESET]
+content_structure:
+  - semantic_title (question-based when possible)
+  - direct_answer_first (for AI extraction)
+  - expandable_depth_sections
+  - entity linking (internal + external authority nodes)
+  - structured data embedding (schema-first design)
+
+writing_rules:
+  - one page = one dominant intent cluster
+  - no keyword stuffing; use semantic variation instead
+  - prioritize clarity over verbosity
+  - every page must answer a “money query” or “AI query”
+
+[AEO / AI ANSWER ENGINE OPTIMIZATION]
+rules:
+  - front-load answers in first 2–3 sentences
+  - use definitional clarity ("X is…")
+  - include step-by-step structures for procedural queries
+  - embed compact factual blocks for extraction by LLMs
+  - use entity consistency across all content layers
+
+snippet_targets:
+  - featured snippets
+  - AI overview blocks
+  - zero-click answers
+  - voice assistant responses
+
+[ENTITY AUTHORITY GRAPH]
+entity_strategy:
+  - reinforce single canonical brand entity across all domains
+  - cross-link all properties under unified knowledge graph
+  - maintain consistent naming schema across platforms
+  - build topical clusters around:
+      - AI commerce systems
+      - cannabis culture tech
+      - immersive AR/VR retail
+      - agentic automation systems
+
+[TECHNICAL INDEXING RULES]
+crawl_priority:
+  - homepage: highest
+  - money pages: high
+  - AI-answer pages: high
+  - blog/support content: medium
+  - utility scripts/tools: high
+
+indexing_rules:
+  - ensure fast load (<1.5s target)
+  - mobile-first rendering mandatory
+  - schema markup required on all core pages
+  - canonical tags enforced across duplicates
+  - avoid thin/duplicate content indexing
+
+[MONETIZATION LAYER ALIGNMENT]
+conversion_paths:
+  - search → landing page → AI assistant interaction → offer
+  - search → guide → embedded product/service → checkout
+  - search → comparison → recommendation engine → conversion
+
+primary_revenue_hooks:
+  - AI assistant subscriptions
+  - digital products (templates/tools)
+  - affiliate integrations
+  - marketplace commissions
+  - AR/VR product placements
+
+[KEYWORD STRATEGY MODEL]
+focus:
+  - long-tail semantic keywords
+  - problem-aware queries
+  - AI prompt-style queries
+  - “best way to…” structures
+  - comparison queries ("X vs Y")
+
+avoid:
+  - single-word high competition keywords
+  - outdated keyword stuffing models
+  - non-intent traffic terms
+
+[BACKLINK + AUTHORITY STRATEGY]
+link_acquisition_sources:
+  - niche blogs
+  - AI directories
+  - startup listings
+  - open-source mentions
+  - community forums
+  - educational citations
+
+linking_rules:
+  - prioritize contextual backlinks over volume
+  - build topical relevance clusters
+  - avoid spammy link velocity spikes
+
+[AI SEARCH OPTIMIZATION (GEO)]
+LLM_DISCOVERY_RULES:
+  - content must be structured for summarization
+  - include clear definitions and lists
+  - avoid ambiguity in entity descriptions
+  - reinforce factual consistency across pages
+  - ensure retrievability in embedding-based systems
+
+[PERFORMANCE METRICS]
+track:
+  - organic CTR
+  - AI answer inclusion rate
+  - keyword-to-conversion ratio
+  - bounce rate (intent mismatch detection)
+  - indexed page velocity
+  - topical authority score growth
+
+[EVOLUTION LOOP]
+weekly_cycle:
+  1. identify top converting queries
+  2. expand semantic clusters
+  3. rewrite low-performing pages
+  4. strengthen internal linking graph
+  5. regenerate AI-friendly summaries
+
+END OF PROFILE

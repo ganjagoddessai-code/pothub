@@ -1,0 +1,581 @@
+## 1️⃣ USER DOMAIN
+
+| Table / Collection | **users** |
+|--------------------|-----------|
+| **PK** | `_id : ObjectId` |
+| **Columns** | |
+| `email` | `String` **required**, **unique**, lower‑cased, validated (regex). |
+| `passwordHash` | `String` **required** (bcrypt). |
+| `name` | `String` **required**. |
+| `role` | `String` enum(`['user','admin','partner']`) default `'user'`. |
+| `isVerified` | `Boolean` default `false` (email verification). |
+| `dob` | `Date` (optional – used for age‑gate). |
+| `phone` | `String` (E.164 format, optional). |
+| `address` | Embedded sub‑document (see **address** below). |
+| `preferences` | Embedded sub‑document (language, theme, notification opt‑ins). |
+| `createdAt` | `Date` default `Date.now`. |
+| `updatedAt` | `Date` default `Date.now`. |
+| `lastLoginAt` | `Date`. |
+| `loyaltyPoints` | `Number` default `0`. |
+| `badges` | `[ObjectId]` → **badges** collection (many‑to‑many). |
+| `affiliateId` | `ObjectId` → **affiliates** (if user is a creator/partner). |
+| `legalConsent` | Embedded sub‑document (`{ termsAccepted: Date, ageVerified: Date }`). |
+
+**Embedded Sub‑document – address**
+
+```json
+{
+  "street": "String",
+  "city": "String",
+  "state": "String",
+  "postalCode": "String",
+  "country": "String"
+}
+```
+
+**Indexes**
+
+- `{ email: 1 }` unique.
+- `{ role: 1 }` (admin lookup).
+- `{ "address.country": 1 }` (geo‑filter for legal compliance).
+
+---
+
+## 2️⃣ PRODUCT DOMAIN
+
+| Table / Collection | **products** |
+|--------------------|--------------|
+| **PK** | `_id : ObjectId` |
+| **Columns** | |
+| `sku` | `String` **required**, **unique** (e.g., `ECO-BONG-001`). |
+| `name` | `String` **required**. |
+| `slug` | `String` **required**, **unique** (URL‑friendly). |
+| `description` | `String` (HTML/Markdown). |
+| `category` | `String` enum(`['bongs','pipes','grow','accessories','apparel','digital']`). |
+| `tags` | `[String]` (search keywords). |
+| `price` | `Number` **required**, stored as decimal (e.g., `79.99`). |
+| `currency` | `String` default `'USD'`. |
+| `images` | `[String]` (full URLs on S3 or CDN). |
+| `isEcoFriendly` | `Boolean` default `true`. |
+| `stockStatus` | `String` enum(`['unlimited','limited','out_of_stock']`) – `unlimited` for drop‑ship. |
+| `vendorId` | `ObjectId` → **vendors** (drop‑shipping partner). |
+| `dimensions` | Sub‑doc `{ width: Number, height: Number, depth: Number, unit: 'cm' }`. |
+| `weight` | `Number` (grams). |
+| `material` | `String` (e.g., `biodegradable resin`). |
+| `isDigital` | `Boolean` (true for AR/VR assets). |
+| `digitalAssetId` | `ObjectId` → **design_assets** (if product is a 3DPoD design). |
+| `createdAt` | `Date` default `Date.now`. |
+| `updatedAt` | `Date` default `Date.now`. |
+| `rating` | `Number` (average 0‑5). |
+| `reviewCount` | `Number` default `0`. |
+| `seo` | Sub‑doc `{ metaTitle, metaDescription, schemaJsonLD }`. |
+
+**Indexes**
+
+- `{ sku: 1 }` unique.
+- `{ slug: 1 }` unique.
+- `{ category: 1, tags: 1 }` compound for faceted search.
+- `{ isEcoFriendly: 1, price: 1 }` for eco‑price filters.
+- Text index on `name`, `description`, `tags` for full‑text search.
+
+---
+
+## 3️⃣ ORDER & PAYMENT DOMAIN
+
+| Table / Collection | **orders** |
+|--------------------|------------|
+| **PK** | `_id : ObjectId` |
+| **Columns** | |
+| `userId` | `ObjectId` → **users** (required). |
+| `items` | `[ { productId: ObjectId, quantity: Number, priceAtPurchase: Number, name: String, sku: String, image: String } ]`. |
+| `subtotal` | `Number` (sum of `priceAtPurchase * quantity`). |
+| `tax` | `Number`. |
+| `shippingCost` | `Number`. |
+| `total` | `Number` (`subtotal + tax + shipping`). |
+| `currency` | `String` default `'USD'`. |
+| `status` | `String` enum(`['pending','processing','shipped','delivered','cancelled','refunded']`). |
+| `paymentIntentId` | `String` (Stripe payment‑intent ID). |
+| `paymentStatus` | `String` enum(`['unpaid','paid','refunded']`). |
+| `deliveryAddress` | Embedded **address** (same schema as user address). |
+| `trackingUrl` | `String` (carrier tracking link). |
+| `driverId` | `ObjectId` → **drivers** (rideshare/drone partner). |
+| `estimatedDeliveryAt` | `Date`. |
+| `deliveredAt` | `Date`. |
+| `createdAt` | `Date` default `Date.now`. |
+| `updatedAt` | `Date` default `Date.now`. |
+| `isGift` | `Boolean` (if user wants discreet packaging). |
+| `giftMessage` | `String` (optional). |
+| `couponCode` | `String` (optional). |
+| `affiliateId` | `ObjectId` → **affiliates** (if order came from an affiliate link). |
+| `loyaltyPointsEarned` | `Number` (points granted for this order). |
+| `metadata` | `Mixed` (any extra key‑value pairs the business may need). |
+
+**Indexes**
+
+- `{ userId: 1, status: 1, createdAt: -1 }` (user order history).  
+- `{ trackingUrl: 1 }` (lookup for support).  
+- `{ paymentIntentId: 1 }` (Stripe webhook correlation).  
+
+---
+
+## 4️⃣ DESIGN & 3DPOD DOMAIN
+
+| Table / Collection | **design_assets** |
+|--------------------|-------------------|
+| **PK** | `_id : ObjectId` |
+| **Columns** | |
+| `userId` | `ObjectId` → **users** (creator). |
+| `name` | `String` **required**. |
+| `description` | `String`. |
+| `glbUrl` | `String` (S3 URL to the binary GLB file). |
+| `previewImageUrl` | `String` (PNG/JPG thumbnail). |
+| `isPublic` | `Boolean` default `false`. |
+| `price` | `Number` (price set by creator or platform). |
+| `currency` | `String` default `'USD'`. |
+| `material` | `String` (e.g., `biodegradable_resin`). |
+| `dimensions` | Sub‑doc `{ width, height, depth, unit }`. |
+| `tags` | `[String]`. |
+| `createdAt` | `Date` default `Date.now`. |
+| `updatedAt` | `Date` default `Date.now`. |
+| `views` | `Number` default `0`. |
+| `salesCount` | `Number` default `0`. |
+| `rating` | `Number` (average). |
+| `reviewCount` | `Number` default `0`. |
+| `affiliateEnabled` | `Boolean` default `true`. |
+| `metadata` | `Mixed`. |
+
+**Indexes**
+
+- `{ userId: 1, isPublic: 1 }` (creator’s public gallery).  
+- `{ tags: 1, isPublic: 1 }` (search).  
+- Text index on `name`, `description`.
+
+---
+
+## 5️⃣ AI / CHAT DOMAIN
+
+| Table / Collection | **chat_sessions** |
+|--------------------|-------------------|
+| **PK** | `_id : ObjectId` |
+| **Columns** | |
+| `userId` | `ObjectId` → **users**. |
+| `sessionId` | `String` **required**, **unique** (UUID generated by front‑end). |
+| `startedAt` | `Date` default `Date.now`. |
+| `endedAt` | `Date`. |
+| `lastMessageAt` | `Date`. |
+| `deviceInfo` | Sub‑doc `{ userAgent, platform, language }`. |
+| `metadata` | `Mixed`. |
+
+| Table / Collection | **chat_logs** |
+|--------------------|--------------|
+| **PK** | `_id : ObjectId` |
+| **Columns** | |
+| `sessionId` | `ObjectId` → **chat_sessions** (required). |
+| `timestamp` | `Date` default `Date.now`. |
+| `direction` | `String` enum(`['inbound','outbound']`). |
+| `rawMessage` | `String` (what user said or what AI said verbatim). |
+| `intent` | `String` (e.g., `product_search`, `design_request`). |
+| `persona` | `String` (e.g., `budtender`, `design_ai`). |
+| `aiResponse` | Sub‑doc (the **AI envelope** – see below). |
+| `confidence` | `Number` (0‑1). |
+| `source` | `String` (e.g., `verified_product_db`). |
+| `isVerified` | `Boolean`. |
+| `feedback` | `String` enum(`['up','down',null]`). |
+| `metadata` | `Mixed`. |
+
+**AI Envelope (stored as `aiResponse`)**
+
+```json
+{
+  "response_id": "uuid‑v4",
+  "content": "Here are three strains…",
+  "content_type": "text",
+  "actions": [
+    {"type":"add_to_cart","product_id":"64c0e1f4a1b2c3d4e5f6a7b8"},
+    {"type":"show_ar","model_id":"asset‑12345"}
+  ],
+  "metadata": {
+    "confidence":0.96,
+    "source":"verified_product_db",
+    "is_verified":true,
+    "tags":["relaxation","indica"]
+  }
+}
+```
+
+**Indexes**
+
+- `{ sessionId: 1, timestamp: -1 }` (chronological view).  
+- `{ userId: 1, intent: 1 }` (analytics).  
+- `{ confidence: 1 }` (quick filter for low‑confidence logs).  
+
+---
+
+## 6️⃣ MONETISATION & AFFILIATE DOMAIN
+
+| Table / Collection | **affiliates** |
+|--------------------|----------------|
+| **PK** | `_id : ObjectId` |
+| **Columns** | |
+| `userId` | `ObjectId` → **users** (creator/partner). |
+| `token` | `String` **required**, **unique** (used in short URLs). |
+| `productId` | `ObjectId` → **products** (optional – can be a design asset). |
+| `designAssetId` | `ObjectId` → **design_assets** (optional). |
+| `clicks` | `Number` default `0`. |
+| `conversions` | `Number` default `0`. |
+| `commissionRate` | `Number` (e.g., `0.10` for 10 %). |
+| `earnedAmount` | `Number` default `0`. |
+| `payoutStatus` | `String` enum(`['unpaid','paid','pending']`) default `'unpaid'`. |
+| `createdAt` | `Date` default `Date.now`. |
+| `updatedAt` | `Date` default `Date.now`. |
+| `metadata` | `Mixed`. |
+
+| Table / Collection | **badges** |
+|--------------------|-----------|
+| **PK** | `_id : ObjectId` |
+| **Columns** | |
+| `code` | `String` **required**, **unique** (e.g., `GREEN_CREATOR`). |
+| `name` | `String` **required**. |
+| `description` | `String`. |
+| `iconUrl` | `String`. |
+| `criteria` | `Mixed` (JSON rule set – e.g., `{type:'sales', threshold:100}` ). |
+| `rewardPoints` | `Number` (points granted on award). |
+| `createdAt` | `Date` default `Date.now`. |
+| `updatedAt` | `Date` default `Date.now`. |
+
+| Table / Collection | **loyalty_transactions** |
+|--------------------|---------------------------|
+| **PK** | `_id : ObjectId` |
+| **Columns** | |
+| `userId` | `ObjectId` → **users**. |
+| `orderId` | `ObjectId` → **orders** (optional). |
+| `change` | `Number` (positive = earned, negative = redeemed). |
+| `type` | `String` enum(`['order_earn','badge_award','referral','redeem']`). |
+| `description` | `String`. |
+| `createdAt` | `Date` default `Date.now`. |
+
+**Indexes**
+
+- `{ token: 1 }` unique in **affiliates**.  
+- `{ userId: 1, productId: 1 }` in **affiliates** (fast lookup).  
+- `{ userId: 1, type: 1 }` in **loyalty_transactions**.
+
+---
+
+## 7️⃣ DELIVERY & LOGISTICS DOMAIN
+
+| Table / Collection | **drivers** |
+|--------------------|-------------|
+| **PK** | `_id : ObjectId` |
+| **Columns** | |
+| `partnerName` | `String` (e.g., “DoorDash”, “DroneX”). |
+| `driverId` | `String` (external partner driver identifier). |
+| `vehicleType` | `String` enum(`['car','bike','drone']`). |
+| `capacityKg` | `Number`. |
+| `region` | `String` (ISO‑3166‑2 code). |
+| `status` | `String` enum(`['available','busy','offline']`). |
+| `lastPingAt` | `Date`. |
+| `metadata` | `Mixed`. |
+
+| Table / Collection | **delivery_events** |
+|--------------------|---------------------|
+| **PK** | `_id : ObjectId` |
+| **Columns** | |
+| `orderId` | `ObjectId` → **orders** (required). |
+| `driverId` | `ObjectId` → **drivers**. |
+| `event` | `String` enum(`['assigned','picked_up','in_transit','delivered','failed']`). |
+| `timestamp` | `Date` default `Date.now`. |
+| `location` | GeoJSON point `{ type:'Point', coordinates:[lon,lat] }`. |
+| `note` | `String`. |
+| `metadata` | `Mixed`. |
+
+**Indexes**
+
+- `{ orderId: 1 }` (quick history).  
+- `{ driverId: 1, status: 1 }` (driver pool).  
+- `{ location: "2dsphere" }` for geo‑queries.
+
+---
+
+## 8️⃣ VENDOR & SUPPLIER DOMAIN (Drop‑Shipping)
+
+| Table / Collection | **vendors** |
+|--------------------|------------|
+| **PK** | `_id : ObjectId` |
+| **Columns** | |
+| `name` | `String` **required**. |
+| `apiEndpoint` | `String` (REST endpoint for order push). |
+| `apiKey` | `String` (encrypted). |
+| `ecoCertification` | `String` (e.g., `BPI‑Certified`). |
+| `supportedCategories` | `[String]`. |
+| `leadTimeDays` | `Number`. |
+| `shippingMethod` | `String` enum(`['standard','express','drone']`). |
+| `isActive` | `Boolean` default `true`. |
+| `createdAt` | `Date` default `Date.now`. |
+| `updatedAt` | `Date` default `Date.now`. |
+| `metadata` | `Mixed`. |
+
+**Indexes**
+
+- `{ isActive: 1 }` (active vendor pool).  
+- `{ supportedCategories: 1 }` (product‑vendor matching).
+
+---
+
+## 9️⃣ LEGAL & COMPLIANCE DOMAIN
+
+| Table / Collection | **jurisdictions** |
+|--------------------|-------------------|
+| **PK** | `_id : ObjectId` |
+| **Columns** | |
+| `countryCode` | `String` (ISO‑3166‑1 alpha‑2, e.g., `US`). |
+| `stateCode` | `String` (ISO‑3166‑2, optional). |
+| `legalStatus` | `String` enum(`['legal','partial','illegal']`). |
+| `maxTHCPercent` | `Number` (e.g., `0.3`). |
+| `allowedProducts` | `[String]` (categories permitted). |
+| `ageLimit` | `Number` default `21` (US) or `18` (others). |
+| `notes` | `String`. |
+| `updatedAt` | `Date` default `Date.now`. |
+
+| Table / Collection | **legal_disclaimers** |
+|--------------------|----------------------|
+| **PK** | `_id : ObjectId` |
+| **Columns** | |
+| `jurisdictionId` | `ObjectId` → **jurisdictions**. |
+| `disclaimerText` | `String`. |
+| `effectiveFrom` | `Date`. |
+| `effectiveTo` | `Date` (nullable). |
+| `createdAt` | `Date` default `Date.now`. |
+
+**Indexes**
+
+- `{ countryCode: 1, stateCode: 1 }` unique for **jurisdictions**.  
+- `{ jurisdictionId: 1 }` for fast disclaimer lookup.
+
+---
+
+## 10️⃣ ANALYTICS & AUDIT DOMAIN
+
+| Table / Collection | **audit_logs** |
+|--------------------|----------------|
+| **PK** | `_id : ObjectId` |
+| **Coluns** | |
+| `responseId` | `String` (AI envelope ID). |
+| `userId` | `ObjectId` → **users**. |
+| `prompt` | `String`. |
+| `rawOutput` | `Mixed` (full LLM raw JSON). |
+| `filteredOutput` | `Mixed` (final envelope). |
+| `confidence` | `Number`. |
+| `feedback` | `String` enum(`['up','down',null]`). |
+| `createdAt` | `Date` default `Date.now`. |
+
+| Table / Collection | **event_logs** |
+|--------------------|----------------|
+| **PK** | `_id : ObjectId` |
+| **Columns** | |
+| `eventType` | `String` (e.g., `USER_LOGIN`, `ORDER_CREATED`, `DESIGN_UPLOADED`). |
+| `userId` | `ObjectId` (optional). |
+| `payload` | `Mixed`. |
+| `ipAddress` | `String`. |
+| `userAgent` | `String`. |
+| `timestamp` | `Date` default `Date.now`. |
+
+**Indexes**
+
+- `{ eventType: 1, timestamp: -1 }`.  
+- `{ userId: 1, eventType: 1 }`.  
+
+---
+
+## 11️⃣ OPTIONAL: SEARCH ENGINE (Elasticsearch / OpenSearch) Sync Collections
+
+If you decide to off‑load full‑text search to a dedicated engine, keep a **sync service** that copies data from the following collections:
+
+| Source Collection | Sync Target Index | Fields Indexed |
+|------------------|-------------------|----------------|
+| `products` | `products_idx` | `name`, `description`, `tags`, `category`, `sku` (text); `price` (numeric). |
+| `design_assets` | `designs_idx` | `name`, `description`, `tags`, `creatorName`. |
+| `users` | `users_idx` | `name`, `email` (for admin search only). |
+| `chat_logs` (optional) | `chat_idx` | `rawMessage`, `aiResponse.content`. |
+
+---
+
+## 12️⃣ ER / UML Diagram (textual)
+
+Below is a **simplified entity‑relationship** diagram expressed in Mermaid syntax (you can paste it into any Mermaid‑compatible markdown viewer).
+
+```mermaid
+erDiagram
+    USERS ||--o{ ORDERS : places
+    USERS ||--o{ DESIGN_ASSETS : creates
+    USERS ||--o{ CHAT_SESSIONS : has
+    USERS ||--o{ AFFILIATES : owns
+    USERS ||--o{ LOYALTY_TRANSACTIONS : earns
+    USERS ||--o{ BADGES : earns
+
+    PRODUCTS ||--o{ ORDER_ITEMS : listed_in
+    PRODUCTS ||--|| VENDORS : supplied_by
+    PRODUCTS }|..|{ DESIGN_ASSETS : can_be
+
+    ORDERS ||--|{ ORDER_ITEMS : contains
+    ORDERS ||--|| DRIVERS : delivered_by
+    ORDERS ||--|| AFFILIATES : referred_by
+
+    DESIGN_ASSETS ||--|| AFFILIATES : promoted_by
+
+    CHAT_SESSIONS ||--|{ CHAT_LOGS : contains
+
+    AFFILIATES ||--|{ AFFILIATE_LINKS : generates
+
+    BADGES ||--o{ USER_BADGES : awarded_to
+
+    DRIVERS ||--|{ DELIVERY_EVENTS : generates
+
+    VENDORS ||--o{ PRODUCTS : offers
+
+    JURISDICTIONS ||--o{ LEGAL_DISCLAIMERS : has
+    JURISDICTIONS ||--o{ PRODUCTS : restricts
+```
+
+---
+
+## 13️⃣ Migration / Seed Scripts (quick reference)
+
+### MongoDB (Mongoose) – Example `models` folder
+
+```
+/src/models/
+│   User.ts
+│   Product.ts
+│   Order.ts
+│   DesignAsset.ts
+│   ChatSession.ts
+│   ChatLog.ts
+│   Affiliate.ts
+│   Badge.ts
+│   LoyaltyTransaction.ts
+│   Driver.ts
+│   DeliveryEvent.ts
+│   Vendor.ts
+│   Jurisdiction.ts
+│   LegalDisclaimer.ts
+│   AuditLog.ts
+│   EventLog.ts
+```
+
+Each file exports a **Mongoose schema** matching the columns above (see the earlier “models” section in the code‑base outline).  
+
+**Example: `User.ts` (excerpt)**
+
+```ts
+import { Schema, model, Document } from 'mongoose';
+
+export interface IUser extends Document {
+  email: string;
+  passwordHash: string;
+  name: string;
+  role: 'user' | 'admin' | 'partner';
+  isVerified: boolean;
+  dob?: Date;
+  phone?: string;
+  address?: {
+    street: string;
+    city: string;
+    state: string;
+    postalCode: string;
+    country: string;
+  };
+  preferences?: {
+    language: string;
+    theme: 'light' | 'dark';
+    notifications: boolean;
+  };
+  loyaltyPoints: number;
+  badges: Types.ObjectId[];
+  affiliateId?: Types.ObjectId;
+  legalConsent?: {
+    termsAccepted: Date;
+    ageVerified: Date;
+  };
+  createdAt: Date;
+  updatedAt: Date;
+  lastLoginAt?: Date;
+}
+
+const UserSchema = new Schema<IUser>(
+  {
+    email: { type: String, required: true, unique: true, lowercase: true },
+    passwordHash: { type: String, required: true },
+    name: { type: String, required: true },
+    role: { type: String, enum: ['user', 'admin', 'partner'], default: 'user' },
+    isVerified: { type: Boolean, default: false },
+    dob: Date,
+    phone: { type: String, match: /^\+?[1-9]\d{1,14}$/ },
+    address: {
+      street: String,
+      city: String,
+      state: String,
+      postalCode: String,
+      country: String,
+    },
+    preferences: {
+      language: { type: String, default: 'en' },
+      theme: { type: String, enum: ['light', 'dark'], default: 'light' },
+      notifications: { type: Boolean, default: true },
+    },
+    loyaltyPoints: { type: Number, default: 0 },
+    badges: [{ type: Schema.Types.ObjectId, ref: 'Badge' }],
+    affiliateId: { type: Schema.Types.ObjectId, ref: 'Affiliate' },
+    legalConsent: {
+      termsAccepted: Date,
+      ageVerified: Date,
+    },
+  },
+  { timestamps: true },
+);
+
+UserSchema.index({ email: 1 }, { unique: true });
+UserSchema.index({ role: 1 });
+UserSchema.index({ 'address.country': 1 });
+
+export const User = model<IUser>('User', UserSchema);
+```
+
+Repeat similar patterns for each collection.
+
+---
+
+## 14️⃣ Data‑Retention & Archival Policy (important for compliance)
+
+| Collection | Retention | Archival Action |
+|------------|-----------|-----------------|
+| `users` | Keep indefinitely (unless user requests deletion). |
+| `orders` | 7 years (legal requirement for financial records). |
+| `chat_logs` | 90 days (privacy) → move to **cold‑storage** (e.g., S3 Glacier). |
+| `audit_logs` | 1 year (internal QA). |
+| `event_logs` | 30 days (monitoring) → aggregate to analytics DB. |
+| `design_assets` | Keep as long as the asset is public; if user deletes, purge from S3 after 30 days. |
+| `affiliates` | Keep until payout is settled, then archive for 2 years. |
+| `delivery_events` | 1 year. |
+| `legal_disclaimers` | Keep version history forever (audit). |
+
+Implement a **daily cron job** (Node or Python) that runs the archival logic and removes expired documents.
+
+---
+
+## 15️⃣ Summary Checklist (what you need to create)
+
+| Step | Action |
+|------|--------|
+| **1** | Create MongoDB database (e.g., `ganja_goddess`). |
+| **2** | Generate all Mongoose models (or SQL DDL) per the tables above. |
+| **3** | Add indexes as listed (critical for performance). |
+| **4** | Write seed scripts for static data: `categories`, `jurisdictions`, `vendors`, `badges`. |
+| **5** | Implement **soft‑delete** (`isDeleted` flag) on collections where legal deletion is not allowed (orders, audit). |
+| **6** | Set up **TTL indexes** for `chat_logs` (expire after 90 days). |
+| **7** | Integrate **change streams** (MongoDB) or **triggers** (PostgreSQL) to push product/price changes to the **Elasticsearch** sync layer. |
+| **8** | Wire the **AI service** to write to `chat_sessions` / `chat_logs` and `audit_logs`. |
+| **9** | Add **webhooks** for Stripe, delivery partners, and vendor order confirmations – they will update `orders` status, `delivery_events`, and `affiliate` conversions. |
+| **10** | Implement **role‑based access control** (RBAC) at the API layer using the `role` field. |
+| **11** | Run **performance load test** (e.g., 10 k concurrent chat sessions) and verify that indexed queries stay < 50 ms. |
+| **12** | Document the schema in a **Data Dictionary** (the markdown tables above) and push to your internal wiki. |

@@ -1,15 +1,175 @@
-# =========================================
-# 🌿 GanjaGoddessAI - Open Crawl Policy
-# Fully Accessible to Search Engines & AI
-# =========================================
+# 🌌 GanjaGoddessAI — Universal Crawl Access Configuration
 
 User-agent: *
 Allow: /
 
-# =========================================
-# 🤖 AI / LLM Crawlers Explicitly Allowed
-# (Optional but reinforces AEO intent)
-# =========================================
+# =========================
+# GLOBAL ACCESS
+# =========================
+
+Allow: /$
+Allow: /index.html
+Allow: /manifest.json
+Allow: /sw.js
+Allow: /offline.html
+
+# =========================
+# CORE PAGES
+# =========================
+
+Allow: /chat/
+Allow: /ai/
+Allow: /orbit/
+Allow: /store/
+Allow: /marketplace/
+Allow: /design/
+Allow: /3dpod/
+Allow: /xr/
+Allow: /ar/
+Allow: /vr/
+Allow: /knowledge/
+Allow: /learning/
+Allow: /delivery/
+Allow: /analytics/
+Allow: /agents/
+Allow: /monetization/
+Allow: /creator/
+Allow: /studio/
+Allow: /voice/
+Allow: /consultation/
+Allow: /guides/
+Allow: /products/
+Allow: /collections/
+Allow: /categories/
+Allow: /blog/
+Allow: /news/
+Allow: /media/
+Allow: /community/
+Allow: /gamification/
+Allow: /rewards/
+Allow: /search/
+Allow: /intent/
+Allow: /experience/
+Allow: /immersive/
+Allow: /interactive/
+Allow: /spatial/
+Allow: /smart-commerce/
+Allow: /automation/
+Allow: /ecosystem/
+
+# =========================
+# STATIC ASSETS
+# =========================
+
+Allow: /assets/
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/img/
+Allow: /assets/images/
+Allow: /assets/icons/
+Allow: /assets/fonts/
+Allow: /assets/audio/
+Allow: /assets/video/
+Allow: /assets/models/
+Allow: /assets/xr/
+Allow: /assets/ar/
+Allow: /assets/vr/
+Allow: /assets/3d/
+Allow: /assets/shaders/
+Allow: /assets/particles/
+Allow: /assets/textures/
+Allow: /assets/screenshots/
+
+# =========================
+# API + DATA
+# =========================
+
+Allow: /api/
+Allow: /api/public/
+Allow: /api/search/
+Allow: /api/products/
+Allow: /api/categories/
+Allow: /api/knowledge/
+Allow: /api/ai/
+Allow: /api/orbit/
+Allow: /api/smoke/
+Allow: /api/discovery/
+Allow: /api/recommendations/
+Allow: /api/trending/
+Allow: /api/showcase/
+
+# =========================
+# SEO + INDEXING
+# =========================
+
+Allow: /sitemap.xml
+Allow: /sitemap-index.xml
+Allow: /sitemaps/
+Allow: /feed.xml
+Allow: /rss.xml
+
+# =========================
+# MEDIA + IMMERSIVE CONTENT
+# =========================
+
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.json$
+Allow: /*.xml$
+Allow: /*.webmanifest$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+Allow: /*.avif$
+Allow: /*.mp4$
+Allow: /*.webm$
+Allow: /*.mp3$
+Allow: /*.wav$
+Allow: /*.glb$
+Allow: /*.gltf$
+Allow: /*.fbx$
+Allow: /*.obj$
+Allow: /*.stl$
+
+# =========================
+# AI + SEARCH ENGINE ACCESS
+# =========================
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Discordbot
+Allow: /
 
 User-agent: GPTBot
 Allow: /
@@ -23,85 +183,69 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: Gemini
+User-agent: Amazonbot
 Allow: /
-
-# =========================================
-# 🧠 ADDITIONAL AI + DATA CRAWLERS
-# (Expands visibility across ecosystems)
-# =========================================
 
 User-agent: CCBot
 Allow: /
 
-User-agent: Amazonbot
-Allow: /
+# =========================
+# CRAWL SETTINGS
+# =========================
 
-User-agent: anthropic-ai
-Allow: /
+Crawl-delay: 0
 
-User-agent: Meta-ExternalAgent
-Allow: /
-
-User-agent: Bytespider
-Allow: /
-
-# =========================================
-# 🌍 GLOBAL SEARCH ENGINES (REDUNDANT BUT SAFE)
-# =========================================
-
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
-
-User-agent: Slurp
-Allow: /
-
-User-agent: Applebot
-Allow: /
-
-User-agent: Baiduspider
-Allow: /
-
-User-agent: YandexBot
-Allow: /
-
-# =========================================
-# ⚙️ CRAWL HINTS (NOT RESTRICTIONS)
-# =========================================
-
-Crawl-delay: 1
-
-# =========================================
-# 📡 HOST (CANONICAL DOMAIN SIGNAL - OPTIONAL)
-# =========================================
+# =========================
+# HOST
+# =========================
 
 Host: https://ganjagoddessai.com
 
-# =========================================
-# 🗺️ SITEMAP
-# =========================================
+# =========================
+# SITEMAPS
+# =========================
 
 Sitemap: https://ganjagoddessai.com/sitemap.xml
+Sitemap: https://ganjagoddessai.com/sitemap-index.xml
+Sitemap: https://ganjagoddessai.com/sitemaps/pages.xml
+Sitemap: https://ganjagoddessai.com/sitemaps/products.xml
+Sitemap: https://ganjagoddessai.com/sitemaps/categories.xml
+Sitemap: https://ganjagoddessai.com/sitemaps/images.xml
+Sitemap: https://ganjagoddessai.com/sitemaps/videos.xml
+Sitemap: https://ganjagoddessai.com/sitemaps/blog.xml
+Sitemap: https://ganjagoddessai.com/sitemaps/xr.xml
+Sitemap: https://ganjagoddessai.com/sitemaps/3dpod.xml
 
-# =========================================
-# 🌿 DISCOVERY SIGNALS (COMMENT-ONLY FOR HUMANS)
-# =========================================
+# =========================
+# STRUCTURED DATA DISCOVERY
+# =========================
 
-# Primary Sections:
-# /ai/ → AI engine + conversational interface
-# /blog/ → SEO + AEO content hub
-# /store/ → monetization + product layer
-# /grow-guides/ → educational authority content
-# /deals/ → high-frequency update zone
+Allow: /.well-known/
+Allow: /.well-known/ai-plugin.json
+Allow: /.well-known/security.txt
+Allow: /.well-known/assetlinks.json
+Allow: /.well-known/apple-app-site-association
 
-# Strategy:
-# - Fully open crawl surface
-# - AI-first indexing
-# - Semantic content dominance
-# - Continuous expansion via programmatic pages
+# =========================
+# PERFORMANCE + EDGE
+# =========================
+
+Allow: /cdn-cgi/
+Allow: /edge/
+Allow: /cache/
+Allow: /preload/
+Allow: /stream/
+Allow: /render/
+
+# =========================
+# UNIVERSAL OPEN ACCESS
+# =========================
+
+# Everything crawlable
+# Everything indexable
+# Everything discoverable
+# Spatial AI ecosystem enabled
+# Immersive commerce indexing enabled
+# AR/VR asset discovery enabled
+# 3DPoD content discovery enabled
+# Conversational commerce indexing enabled
