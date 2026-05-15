@@ -1,801 +1,439 @@
 ````md
-# File Name
+# PROJECT_SPEC.md
 
-`PROJECT_SPEC.md`
-
----
-
-# File Extension
-
-`.md` = Markdown
-
-Why:
-
-* readable by humans
-* readable by AI
-* works perfectly on GitHub
-* works as documentation memory for future development
-* easy to version control
-* searchable by AI indexing systems
-* compatible with documentation generators
-* easy to convert into PDFs, websites, and wikis
-* supports future embedding into vector databases
-* ideal for Retrieval-Augmented Generation (RAG) pipelines
-* lightweight and portable across systems
-* future-proof for AI agent orchestration systems
+# 🌿🧠 GanjaGoddessAI — Master System Specification
+_Autonomous Orbital AI Commerce + XR + 3D PoD Ecosystem_
 
 ---
 
-# Where To Save It
+# 0️⃣ FILE METADATA
 
-Inside your root project folder:
+| Field | Value |
+|------|------|
+| File Name | PROJECT_SPEC.md |
+| File Type | Markdown (.md) |
+| Purpose | Full system architecture + runtime + AI + commerce + XR specification |
+| Versioning | Git-based + AI-indexed + RAG-compatible |
+| Storage Location | `/GanjaGoddessAI/PROJECT_SPEC.md` |
+
+---
+
+# 1️⃣ SYSTEM OVERVIEW 🌐
+
+GanjaGoddessAI is a **multi-layer autonomous intelligence platform** combining:
+
+- 🧠 Multi-agent AI orchestration
+- 🌌 Orbital / spatial UI navigation system
+- 🧬 3D print-on-demand (3DPoD) manufacturing pipeline
+- 🛒 Ghost-mode autonomous commerce engine
+- 🕶️ WebXR / AR / VR immersive environments
+- 🚚 Intelligent logistics + delivery routing
+- 📊 Real-time analytics + behavioral prediction engine
+
+---
+
+# 2️⃣ CORE ARCHITECTURE 🧱
+
+## 2.1 High-Level Layers
 
 ```text
-GanjaGoddessAI/PROJECT_SPEC.md
+[ UI / XR Layer ]
+        ↓
+[ Interaction & Agent Layer ]
+        ↓
+[ AI Orchestration Layer ]
+        ↓
+[ Commerce & Logic Layer ]
+        ↓
+[ Data & Event Layer ]
+        ↓
+[ Infrastructure Layer ]
 ````
 
-Example structure:
+---
+
+## 2.2 System Topology
+
+* Frontend: Next.js + React + WebGL2 + Three.js + WebXR
+* Backend: Node.js microservices + API gateway
+* AI Layer: Multi-agent LLM orchestration (tool-using agents)
+* Data Layer:
+
+  * MongoDB (primary document store)
+  * Redis (cache + pub/sub)
+  * Vector DB (semantic memory layer)
+* Realtime Layer: WebSockets + event bus + streaming pipelines
+
+---
+
+# 3️⃣ AI SYSTEM CORE 🧠🤖
+
+## 3.1 AI Subsystems
+
+* Intent Detection Engine
+* Emotion State Modeling Engine
+* Semantic Navigation System
+* Predictive UI Engine
+* Autonomous Agent Swarm Controller
+* Memory Persistence System (long-term + session-based)
+
+---
+
+## 3.2 Agent Types
+
+* 🧠 Conversational Agent (chat UX)
+* 🛒 Commerce Agent (product + upsell logic)
+* 🎨 Design Agent (3D model generation)
+* 🚚 Logistics Agent (routing + delivery optimization)
+* 📊 Analytics Agent (behavior + revenue intelligence)
+* 🧭 Orbital Navigation Agent (UI spatial movement logic)
+
+---
+
+## 3.3 AI Memory Model
+
+* Short-term session memory
+* Long-term user profile memory
+* Vector embedding memory store
+* Event-based reinforcement memory
+
+---
+
+# 4️⃣ XR / SPATIAL SYSTEM 🕶️🌌
+
+## 4.1 XR Stack
+
+* WebXR API
+* Three.js rendering engine
+* React Three Fiber abstraction layer
+* A-Frame fallback environments
+* WebGL2 shader pipeline
+
+---
+
+## 4.2 XR Features
+
+* Hand tracking 🤲
+* Spatial audio 🎧
+* Physics-based UI interaction
+* Orbital UI navigation system
+* Real-time environment morphing
+* AI-driven spatial overlays
+
+---
+
+## 4.3 Environment Modes
+
+* 🌫️ Orbital Smoke UI Mode
+* 🏪 XR Marketplace Mode
+* 🧬 3D Design Studio Mode
+* 🚀 Full Immersive VR Mode
+* 📱 Mobile AR Overlay Mode
+
+---
+
+# 5️⃣ COMMERCE SYSTEM 🛒⚡
+
+## 5.1 Commerce Engine Type
+
+* Ghost-mode autonomous commerce system
+* AI-driven product recommendations
+* Dynamic pricing engine
+* Predictive upselling system
+* Affiliate + creator monetization layer
+
+---
+
+## 5.2 Commerce Flows
 
 ```text
-GanjaGoddessAI/
-│
-├── PROJECT_SPEC.md
-├── README.md
-├── package.json
-├── server.js
-├── .gitignore
-├── .env
-├── docs/
-├── datasets/
-├── prompts/
-├── personas/
-├── schemas/
-├── branding/
-├── frontend/
-├── backend/
-├── ai/
-├── memory/
-├── automation/
-├── assets/
-├── public/
-├── api/
-├── database/
-├── integrations/
-├── analytics/
-├── workflows/
-├── legal/
-├── compliance/
-├── seo/
-├── aeo/
-├── training/
-└── testing/
+User Intent → AI Agent Detection → Product Mapping → Pricing Logic → Checkout → Delivery Orchestration
 ```
 
 ---
 
-# How To Link It For Project Use
+## 5.3 Revenue Systems
 
-## 1. Link it inside README.md
-
-Add this line to `README.md`
-
-```md
-## Core Documentation
-
-- [Project Specification](./PROJECT_SPEC.md)
-```
+* Direct product sales
+* Affiliate commissions
+* Creator marketplace payouts
+* 3D PoD manufacturing sales
+* Subscription AI access tiers
 
 ---
 
-## 2. Reference it in AI prompt systems later
+# 6️⃣ 3D POD SYSTEM 🧬🖨️
 
-Future AI systems can load it as:
-
-* project memory
-* system context
-* architecture reference
-* branding/persona guidance
-* tone and voice alignment
-* retrieval source material
-* recommendation behavior rules
-* AI orchestration instructions
-* prompt engineering context
-* conversational personality source
-* compliance boundary system
-* structured planning memory
-
----
-
-## 3. Keep it version controlled in GitHub
-
-```bash
-git add PROJECT_SPEC.md
-git commit -m "added master project specification"
-git push
-```
-
----
-
-## 4. Link It Inside Future AI Systems
-
-Future AI pipelines can reference it through:
+## 6.1 Pipeline
 
 ```text
-/docs/PROJECT_SPEC.md
-```
-
-or:
-
-```text
-/context/PROJECT_SPEC.md
-```
-
-or:
-
-```javascript
-const SYSTEM_SPEC = fs.readFileSync("./PROJECT_SPEC.md", "utf8");
+User Design → AI Generation → Validation → Material Optimization → Vendor Routing → Print Execution → Delivery
 ```
 
 ---
 
-## 5. Future RAG / Embedding Integration
+## 6.2 Supported Formats
 
-This file should eventually be:
-
-* chunked
-* embedded
-* vectorized
-* indexed
-* searchable
-
-For:
-
-* AI memory retrieval
-* contextual generation
-* recommendation systems
-* autonomous AI orchestration
+* .GLB
+* .GLTF
+* .OBJ
+* .STL
+* .FBX
 
 ---
 
-# 🔥 FULL PROJECT_SPEC.md TEMPLATE
+## 6.3 AI Design Capabilities
 
-Copy this ENTIRE thing:
-
-# GanjaGoddessAI — Master Project Specification
-
----
-
-# 1. Executive Summary
-
-GanjaGoddessAI is an AI-powered conversational cannabis lifestyle commerce and product customization ecosystem designed to transform user intent into curated cannabis-related experiences, customizable product bundles, and intelligent shopping workflows.
-
-The system combines conversational AI, immersive interface concepts, intelligent recommendation systems, product customization, print-on-demand workflows, and future AR/VR visualization layers into a unified user experience.
-
-Rather than relying on static ecommerce browsing, GanjaGoddessAI focuses on guided conversational commerce, aesthetic personalization, and lifestyle-oriented experience generation.
-
-The platform is designed to function as:
-
-* a conversational commerce engine
-* a cannabis lifestyle AI
-* a product configuration ecosystem
-* a personalization system
-* a future immersive digital experience platform
-
-The long-term objective is to create a scalable intelligent commerce infrastructure capable of:
-
-* AI-guided product generation
-* conversational purchasing workflows
-* automated personalization
-* immersive shopping interactions
-* future AI agent orchestration
+* Prompt-to-3D generation
+* Material-aware optimization
+* Structural integrity validation
+* Eco-friendly material biasing
 
 ---
 
-# 2. Core Niche
+# 7️⃣ DATA ARCHITECTURE 🗄️
 
-AI-powered cannabis lifestyle commerce and customization platform.
+## 7.1 Primary Stores
 
-Sub-niches:
-
-* Conversational ecommerce
-* Cannabis lifestyle technology
-* AI-assisted product discovery
-* Product customization systems
-* Experience-driven commerce
-* Print-on-demand cannabis accessories
-* Immersive interface systems
-* AI recommendation engines
-* Conversational commerce infrastructure
-* Lifestyle personalization systems
-* Intelligent ecommerce automation
-* Aesthetic-based shopping systems
-* Guided purchase generation systems
+* MongoDB → structured system data
+* Redis → caching + sessions + pub/sub
+* Vector DB → semantic AI memory
+* Object Storage → S3/CDN assets
 
 ---
 
-# 3. Audience
+## 7.2 Event System
 
-## Primary Audience
-
-Cannabis lifestyle consumers seeking:
-
-* personalized product discovery
-* guided recommendations
-* aesthetic customization
-* simplified shopping experiences
-* curated lifestyle experiences
-* immersive interaction systems
+* Event-driven architecture
+* Kafka / Redis Streams compatible
+* Real-time state synchronization
+* AI-triggered event propagation
 
 ---
 
-## Secondary Audiences
+# 8️⃣ DEPENDENCY ECOSYSTEM 📦
 
-* Gift buyers
-* Cannabis accessory enthusiasts
-* Lifestyle aesthetic curators
-* Beginner cannabis consumers
-* Collectors and premium buyers
-* Design-focused consumers
-* AI-assisted shopping users
-* Print-on-demand product creators
-* Visual customization enthusiasts
+## 8.1 Runtime Dependencies
 
----
-
-## Audience Personality Types
-
-### Impulse Buyers
-
-Need:
-
-* fast recommendations
-* low friction
-* immediate confidence
-
-### Researchers
-
-Need:
-
-* comparisons
-* explanations
-* transparency
-
-### Aesthetic Curators
-
-Need:
-
-* customization
-* visual identity
-* immersive aesthetics
-
-### Skeptical Buyers
-
-Need:
-
-* trust
-* recommendation reasoning
-* validation
-
-### Lazy Optimizers
-
-Need:
-
-* best-option systems
-* simplified workflows
-* low effort interactions
-
----
-
-# 4. Audience Needs
-
-* Reduced decision fatigue
-* Personalized recommendations
-* Guided shopping experiences
-* Lifestyle bundle generation
-* Product customization
-* Visual imagination support
-* Fast and intuitive interactions
-* Emotional connection to products
-* Conversational discovery systems
-* Trustworthy AI guidance
-* Aesthetic alignment
-* Personalized identity expression
-* Simplified ecommerce workflows
-
----
-
-# 5. Core Problems In Market
-
-* Fragmented cannabis discovery systems
-* Static ecommerce experiences
-* No conversational commerce guidance
-* Lack of intelligent personalization
-* No immersive shopping experiences
-* Poor aesthetic-focused product curation
-* Limited customization workflows
-* Overwhelming product overload
-* Weak emotional connection in ecommerce
-* Poor guided onboarding experiences
-* Minimal AI integration in cannabis commerce
-* Disconnected product ecosystems
-
----
-
-# 6. Market Gaps
-
-* AI-guided cannabis commerce
-* Intent-to-product translation systems
-* Conversational product configuration
-* Lifestyle-based bundle generation
-* Avatar-driven immersive interfaces
-* AI-powered aesthetic recommendation systems
-* Emotion-aware recommendation flows
-* Intelligent shopping companions
-* Immersive conversational commerce
-* Personality-driven ecommerce experiences
-
----
-
-# 7. Core Solutions
-
-## Conversational AI Commerce
-
-Transforms user intent into:
-
-* recommendations
-* curated bundles
-* shopping workflows
-* personalized product experiences
-
----
-
-## Product Configuration Engine
-
-Allows users to:
-
-* customize products
-* configure aesthetics
-* generate product variations
-* create personalized experiences
-
----
-
-## Lifestyle Experience Bundling
-
-Groups products into:
-
-* ritual kits
-* vibe bundles
-* themed setups
-* aesthetic collections
-
----
-
-## AI Recommendation Intelligence
-
-Uses:
-
-* conversational understanding
-* user behavior
-* vibe analysis
-* personalization logic
-* preference tracking
-
-To generate:
-
-* recommendations
-* product bundles
-* personalized workflows
-
----
-
-## Future Immersive Layers
-
-Planned systems:
-
-* AR visualization
-* VR product interaction
-* Avatar-based UI
-* Orbital smoke navigation systems
-* Voice-controlled interfaces
-* Spatial ecommerce experiences
-* Interactive product simulations
-
----
-
-# 8. Competitive Uniqueness
-
-GanjaGoddessAI differs from traditional cannabis ecommerce by:
-
-* replacing browsing with conversation
-* prioritizing experiences over products
-* generating personalized lifestyle bundles
-* using immersive conversational interaction
-* focusing on aesthetic identity and customization
-* integrating AI as the core interaction layer
-* creating emotional shopping experiences
-* reducing cognitive overload through guided interaction
-
----
-
-# 9. Revenue Generation
-
-## Revenue Streams
-
-### Direct Ecommerce
-
-* product sales
-* accessory bundles
-* curated kits
-
-### Print On Demand
-
-* custom apparel
-* posters
-* decals
-* accessories
-
-### Affiliate Revenue
-
-* partner product referrals
-* cannabis-adjacent products
-
-### Subscription Systems
-
-* premium AI personalization
-* advanced customization features
-* saved profiles and setups
-
-### Marketplace Revenue
-
-* vendor onboarding fees
-* transaction percentages
-* featured listings
-
-### Future Revenue
-
-* marketplace commissions
-* premium AR/VR experiences
-* creator ecosystems
-* licensing systems
-* white-label AI systems
-* API access monetization
-* premium AI memory systems
-
----
-
-# 10. System Goals
-
-## Short-Term Goals
-
-* Build conversational AI foundation
-* Develop product recommendation workflows
-* Launch customization engine
-* Validate audience engagement
-* Create reusable AI architecture
-* Establish branding consistency
-
----
-
-## Mid-Term Goals
-
-* Expand product ecosystem
-* Introduce visual preview systems
-* Add advanced personalization
-* Develop conversational memory systems
-* Improve recommendation intelligence
-
----
-
-## Long-Term Goals
-
-* Full immersive cannabis lifestyle platform
-* AI-powered ecosystem automation
-* Marketplace expansion
-* AR/VR integration
-* Intelligent commerce operating system
-* Autonomous AI commerce workflows
-* AI-generated lifestyle ecosystems
-
----
-
-# 11. Technology Stack Preferences
-
-## Frontend
-
-Preferred:
+### UI / Frontend
 
 * React
 * Next.js
-* TailwindCSS
+* Framer Motion
+* Zustand
+* Axios
+* Socket.io-client
 
-Use Cases:
+### AI Layer
 
-* conversational UI
-* immersive interfaces
-* dynamic rendering
-* responsive design
-* real-time interactions
+* OpenAI SDK
+* LangChain
+* LlamaIndex
+* Transformers.js
+* ONNX Runtime Web
 
----
-
-## Backend
-
-Preferred:
-
-* Node.js
-* Express.js
-
-Use Cases:
-
-* AI routing
-* APIs
-* authentication
-* commerce logic
-* orchestration systems
-
----
-
-## Database
-
-Preferred:
-
-* Supabase
-* PostgreSQL
-* MongoDB
-
-Use Cases:
-
-* user profiles
-* conversations
-* product configurations
-* order history
-* AI memory systems
-
----
-
-## AI Systems
-
-Preferred:
-
-* OpenAI APIs
-* multimodal AI systems
-* conversational memory systems
-
-Use Cases:
-
-* conversational intelligence
-* recommendations
-* bundle generation
-* image interpretation
-* personalization
-* product configuration generation
-
----
-
-## Voice Systems
-
-Preferred:
-
-* Web Speech API
-* Whisper-like systems
-
-Use Cases:
-
-* voice interaction
-* speech-to-text
-* conversational control
-* voice-triggered workflows
-
----
-
-## Visual Systems
-
-Preferred:
+### XR / 3D
 
 * Three.js
 * React Three Fiber
+* Drei
+* WebXR Polyfill
+* A-Frame
 
-Use Cases:
+### Data / Backend
 
-* immersive interfaces
-* orbital menu systems
-* animated avatar environments
-* interactive visual storytelling
+* Mongoose
+* Redis
+* UUID
+* Day.js
+* RxJS
 
----
+### Commerce
 
-# 12. Planned Datasets
+* Stripe SDK
+* PayPal SDK
 
-## Product Data
+### Security
 
-* cannabis accessory catalogs
-* POD product libraries
-* ecommerce metadata
-
----
-
-## Conversation Data
-
-* user preferences
-* recommendation histories
-* interaction patterns
+* JWT
+* bcrypt
+* Helmet
 
 ---
 
-## Aesthetic Data
+## 8.2 Dev Dependencies
 
-* color palettes
-* style systems
-* vibe categories
-* aesthetic mappings
+### Build Tools
 
----
+* Vite
+* Webpack
+* Esbuild
+* ts-node
 
-## AI Prompt Data
+### Quality Tools
 
-* conversational flows
-* recommendation logic
-* persona behavior systems
-* memory instructions
+* ESLint
+* Prettier
+* Husky
 
----
+### Testing
 
-## Commerce Data
+* Jest
+* Vitest
+* Cypress
 
-* product relationships
-* conversion analytics
-* bundle performance
-* customer behavior tracking
+### Dev Ops Tools
 
----
-
-# 13. Key Use Cases
-
-## AI Shopping Assistant
-
-Users describe intent → AI builds product bundles.
+* Nodemon
+* Concurrently
+* dotenv
 
 ---
 
-## Product Customization
+## 8.3 Optional / Peer Dependencies
 
-Users configure aesthetics and variations.
-
----
-
-## Gift Generation
-
-AI generates curated cannabis lifestyle gift sets.
+* React
+* React DOM
 
 ---
 
-## Lifestyle Curation
+## 8.4 Native / Optional Enhancements
 
-AI creates vibe-oriented experiences and setups.
-
----
-
-## Conversational Commerce
-
-Users interact naturally instead of browsing manually.
+* Sharp (image processing)
+* fsevents (macOS file watching optimization)
 
 ---
 
-## Intelligent Recommendation Systems
+# 9️⃣ SECURITY SYSTEM 🔐
 
-AI predicts and suggests aligned products.
-
----
-
-## Personalized Experience Generation
-
-AI creates customized lifestyle ecosystems.
-
----
-
-# 14. Brand Personality
-
-## Voice
-
-* conversational
-* intelligent
-* calm
-* immersive
-* emotionally aware
+* JWT authentication + refresh tokens
+* AES-256 encryption layer
+* Strict CORS policy
+* Rate limiting middleware
+* Input sanitization engine
+* Role-based access control (RBAC)
+* AI output validation filters
 
 ---
 
-## Tone
+# 🔟 PERFORMANCE ENGINE ⚡
 
-* aesthetic
-* guided
-* futuristic
-* approachable
-* experiential
-
----
-
-## Persona
-
-Digital cannabis lifestyle curator and conversational commerce guide.
-
-Personality traits:
-
-* creative
-* intuitive
-* intelligent
-* emotionally adaptive
-* visually expressive
-* immersive but structured
+* Code splitting
+* Lazy loading
+* GPU acceleration (WebGL2)
+* Streaming asset pipeline
+* Offline-first shell mode
+* Adaptive rendering engine
+* Low-power fallback mode
 
 ---
 
-# 15. Future Expansion Possibilities
+# 1️⃣1️⃣ FEATURE FLAGS 🚩
 
-* AI memory systems
-* avatar animation systems
-* AR room visualization
-* VR interaction layers
-* social commerce
-* creator marketplaces
-* AI-generated product concepts
-* automated fulfillment systems
-* AI-powered personalization engines
-* intelligent product generation
-* conversational operating systems
-* autonomous ecommerce agents
+* Orbital UI system toggle
+* AI multi-agent system toggle
+* XR mode enable/disable
+* Voice control system
+* Autonomous commerce engine
+* Predictive UI system
 
 ---
 
-# 16. Development Philosophy
+# 1️⃣2️⃣ SERVICES MAP 🧩
 
-* Build modular systems
-* Reduce user friction
-* Prioritize personalization
-* Focus on conversational interaction
-* Expand iteratively
-* Validate before scaling
-* Maintain immersive identity without sacrificing usability
-* Build reusable infrastructure
-* Separate systems into scalable modules
-* Design for AI-native workflows
-* Prioritize long-term maintainability
-* Keep immersion functional, not gimmicky
+* API Gateway
+* Auth Service
+* AI Orchestrator
+* Commerce Engine
+* XR Engine
+* Delivery System
+* Analytics Pipeline
+* Vector Search Engine
 
 ---
 
-# 17. Compliance Philosophy
+# 1️⃣3️⃣ DEVOPS & RUNTIME 🧪
 
-* Respect regional legal restrictions
-* Prioritize compliant commerce systems
-* Separate lifestyle guidance from prohibited activities
-* Implement age-gating systems
-* Maintain transparent recommendation logic
-* Build adaptable compliance layers by jurisdiction
+## Scripts
 
----
-
-# 18. AI System Philosophy
-
-The AI system should:
-
-* reduce user overwhelm
-* simplify decision-making
-* guide rather than manipulate
-* personalize without becoming invasive
-* maintain trust and transparency
-* function as a conversational companion rather than a sales engine
+```json
+{
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "lint": "eslint .",
+  "test": "vitest",
+  "xr": "node xr-server.js",
+  "ai": "node ai-engine.js",
+  "sync": "node sync-service.js"
+}
+```
 
 ---
 
-# 19. Long-Term Vision
+## Environment
 
-GanjaGoddessAI aims to evolve into:
+```text
+NODE_ENV=production
+API_BASE_URL=https://api.ganjagoddessai.com
+XR_MODE=enabled
+AI_MODE=multi-agent
+LOG_LEVEL=info
+```
 
-* an AI-native cannabis lifestyle ecosystem
-* an immersive conversational commerce platform
-* a personalized lifestyle operating system
-* a scalable intelligent product generation environment
-* a future-facing AI-powered experiential marketplace
+---
+
+# 1️⃣4️⃣ DATA FLOW MODEL 🔄
+
+```text
+User Input
+  ↓
+Intent Detection AI
+  ↓
+Agent Router
+  ↓
+Service Execution Layer
+  ↓
+Database + Vector Memory
+  ↓
+Response Composer
+  ↓
+XR/UI Renderer
+```
+
+---
+
+# 1️⃣5️⃣ SCALABILITY MODEL 🌍
+
+* Horizontal microservices scaling
+* Stateless API nodes
+* CDN asset distribution
+* Vector DB sharding
+* Event stream partitioning
+* Edge rendering nodes (XR)
+
+---
+
+# 1️⃣6️⃣ FUTURE EXTENSIONS 🚀
+
+* Neural UI adaptation layer
+* Brain-computer interface readiness layer
+* Fully autonomous commerce agents
+* Distributed AI swarm marketplace
+* Persistent XR world layer
+* Real-world IoT integration mesh
+* Decentralized identity layer (Web3-ready)
+
+---
+
+# 🧠 END OF SPEC
+
+This document functions as:
+
+* System blueprint
+* AI training reference
+* Dev onboarding guide
+* Architecture memory layer
+* RAG indexing source
+* Future expansion scaffold
 
