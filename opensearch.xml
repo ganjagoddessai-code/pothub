@@ -1,1 +1,11 @@
-?
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>GanjagoddessAI</ShortName>
+  <Description>Search GanjagoddessAI Orbital Interface</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" template="https://ganjagoddessai.com/search?q={searchTerms}"/>
+  <Image height="16" width="16" type="image/x-icon">https://ganjagoddessai.com/icons/icon-192.png</Image>
+  <Developer>GanjagoddessAI Systems</Developer>
+  <Attribution>© 2026 GanjagoddessAI</Attribution>
+  <SyndicationRight>open</SyndicationRight>
+</OpenSearchDescription>
