@@ -1,293 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+xmlns:xhtml="http://www.w3.org/1999/xhtml"
+xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml"
-  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
-  xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
->
+<!-- CORE SYSTEM -->
+<url>
+<loc>https://ganjagoddessai.com/</loc>
+<lastmod>2026-05-10</lastmod>
+<changefreq>hourly</changefreq>
+<priority>1.0</priority>
+<image:image>
+<image:loc>https://ganjagoddessai.com/assets/screenshots/hero.png</image:loc>
+<image:title>GanjaGoddessAI Orbital Smoke Interface</image:title>
+<image:caption>AI-powered smoke-driven immersive interface system</image:caption>
+</image:image>
+</url>
 
-  <!-- 🌌 CORE SYSTEM -->
+<!-- AI SYSTEMS -->
+<url><loc>https://ganjagoddessai.com/chat</loc><lastmod>2026-05-10</lastmod><changefreq>hourly</changefreq><priority>0.98</priority></url>
+<url><loc>https://ganjagoddessai.com/ai</loc><lastmod>2026-05-10</lastmod><changefreq>hourly</changefreq><priority>0.97</priority></url>
+<url><loc>https://ganjagoddessai.com/agents</loc><lastmod>2026-05-10</lastmod><changefreq>hourly</changefreq><priority>0.96</priority></url>
+<url><loc>https://ganjagoddessai.com/orbit</loc><lastmod>2026-05-10</lastmod><changefreq>hourly</changefreq><priority>0.96</priority></url>
 
-  <url>
-    <loc>https://ganjagoddessai.com/</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>hourly</changefreq>
-    <priority>1.0</priority>
+<!-- COMMERCE -->
+<url><loc>https://ganjagoddessai.com/store</loc><lastmod>2026-05-10</lastmod><changefreq>hourly</changefreq><priority>0.95</priority></url>
+<url><loc>https://ganjagoddessai.com/marketplace</loc><lastmod>2026-05-10</lastmod><changefreq>hourly</changefreq><priority>0.95</priority></url>
+<url><loc>https://ganjagoddessai.com/products</loc><lastmod>2026-05-10</lastmod><changefreq>daily</changefreq><priority>0.94</priority></url>
+<url><loc>https://ganjagoddessai.com/categories</loc><lastmod>2026-05-10</lastmod><changefreq>daily</changefreq><priority>0.93</priority></url>
+<url><loc>https://ganjagoddessai.com/collections</loc><lastmod>2026-05-10</lastmod><changefreq>daily</changefreq><priority>0.93</priority></url>
 
-    <image:image>
-      <image:loc>https://ganjagoddessai.com/assets/screenshots/hero.png</image:loc>
-      <image:title>GanjaGoddessAI Orbital Smoke Interface</image:title>
-      <image:caption>AI-powered smoke-driven immersive interface system</image:caption>
-    </image:image>
-  </url>
+<!-- 3D / XR -->
+<url>
+<loc>https://ganjagoddessai.com/design</loc>
+<lastmod>2026-05-10</lastmod>
+<changefreq>hourly</changefreq>
+<priority>0.96</priority>
+</url>
 
-  <!-- 🤖 AI SYSTEMS -->
+<url>
+<loc>https://ganjagoddessai.com/3dpod</loc>
+<lastmod>2026-05-10</lastmod>
+<changefreq>hourly</changefreq>
+<priority>0.97</priority>
+<image:image>
+<image:loc>https://ganjagoddessai.com/assets/screenshots/3dpod.png</image:loc>
+<image:title>3DPoD Spatial Manufacturing</image:title>
+<image:caption>AR/VR AI-powered print-on-demand fabrication</image:caption>
+</image:image>
+</url>
 
-  <url>
-    <loc>https://ganjagoddessai.com/chat</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.98</priority>
-  </url>
+<url><loc>https://ganjagoddessai.com/ar</loc><lastmod>2026-05-10</lastmod><changefreq>hourly</changefreq><priority>0.95</priority></url>
+<url><loc>https://ganjagoddessai.com/vr</loc><lastmod>2026-05-10</lastmod><changefreq>hourly</changefreq><priority>0.95</priority></url>
+<url><loc>https://ganjagoddessai.com/xr</loc><lastmod>2026-05-10</lastmod><changefreq>hourly</changefreq><priority>0.95</priority></url>
 
-  <url>
-    <loc>https://ganjagoddessai.com/ai</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.97</priority>
-  </url>
+<!-- KNOWLEDGE -->
+<url><loc>https://ganjagoddessai.com/knowledge</loc><lastmod>2026-05-10</lastmod><changefreq>daily</changefreq><priority>0.92</priority></url>
+<url><loc>https://ganjagoddessai.com/learning</loc><lastmod>2026-05-10</lastmod><changefreq>daily</changefreq><priority>0.91</priority></url>
+<url><loc>https://ganjagoddessai.com/guides</loc><lastmod>2026-05-10</lastmod><changefreq>daily</changefreq><priority>0.90</priority></url>
 
-  <url>
-    <loc>https://ganjagoddessai.com/agents</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>hourly</changefreq>
-    <priority>0.96</priority>
-  </url>
+<!-- DELIVERY -->
+<url><loc>https://ganjagoddessai.com/delivery</loc><lastmod>2026-05-10</lastmod><changefreq>hourly</changefreq><priority>0.90</priority></url>
 
-  <url>
-    <loc>https://ganjagoddessai.com/orbit</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.96</priority>
-  </url>
+<!-- MONETIZATION -->
+<url><loc>https://ganjagoddessai.com/monetization</loc><lastmod>2026-05-10</lastmod><changefreq>daily</changefreq><priority>0.89</priority></url>
+<url><loc>https://ganjagoddessai.com/hustle</loc><lastmod>2026-05-10</lastmod><changefreq>daily</changefreq><priority>0.88</priority></url>
 
-  <!-- 🛒 COMMERCE -->
+<!-- GAMIFICATION -->
+<url><loc>https://ganjagoddessai.com/gamification</loc><lastmod>2026-05-10</lastmod><changefreq>daily</changefreq><priority>0.88</priority></url>
+<url><loc>https://ganjagoddessai.com/rewards</loc><lastmod>2026-05-10</lastmod><changefreq>daily</changefreq><priority>0.87</priority></url>
 
-  <url>
-    <loc>https://ganjagoddessai.com/store</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>hourly</changefreq>
-    <priority>0.95</priority>
-  </url>
+<!-- ANALYTICS -->
+<url><loc>https://ganjagoddessai.com/analytics</loc><lastmod>2026-05-10</lastmod><changefreq>hourly</changefreq><priority>0.88</priority></url>
 
-  <url>
-    <loc>https://ganjagoddessai.com/marketplace</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>hourly</changefreq>
-    <priority>0.95</priority>
-  </url>
+<!-- COMMUNITY -->
+<url><loc>https://ganjagoddessai.com/community</loc><lastmod>2026-05-10</lastmod><changefreq>daily</changefreq><priority>0.84</priority></url>
+<url><loc>https://ganjagoddessai.com/blog</loc><lastmod>2026-05-10</lastmod><changefreq>daily</changefreq><priority>0.84</priority></url>
+<url><loc>https://ganjagoddessai.com/news</loc><lastmod>2026-05-10</lastmod><changefreq>hourly</changefreq><priority>0.83</priority></url>
 
-  <url>
-    <loc>https://ganjagoddessai.com/products</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.94</priority>
-  </url>
+<!-- SYSTEM -->
+<url><loc>https://ganjagoddessai.com/settings</loc><lastmod>2026-05-10</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
+<url><loc>https://ganjagoddessai.com/profile</loc><lastmod>2026-05-10</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
+<url><loc>https://ganjagoddessai.com/privacy</loc><lastmod>2026-05-10</lastmod><changefreq>monthly</changefreq><priority>0.50</priority></url>
+<url><loc>https://ganjagoddessai.com/terms</loc><lastmod>2026-05-10</lastmod><changefreq>monthly</changefreq><priority>0.50</priority></url>
 
-  <url>
-    <loc>https://ganjagoddessai.com/categories</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.93</priority>
-  </url>
-
-  <url>
-    <loc>https://ganjagoddessai.com/collections</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.93</priority>
-  </url>
-
-  <!-- 🎨 3D / XR -->
-
-  <url>
-    <loc>https://ganjagoddessai.com/design</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.96</priority>
-  </url>
-
-  <url>
-    <loc>https://ganjagoddessai.com/3dpod</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.97</priority>
-
-    <image:image>
-      <image:loc>https://ganjagoddessai.com/assets/screenshots/3dpod.png</image:loc>
-      <image:title>3DPoD Spatial Manufacturing</image:title>
-      <image:caption>AR/VR AI-powered print-on-demand fabrication</image:caption>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://ganjagoddessai.com/ar</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.95</priority>
-  </url>
-
-  <url>
-    <loc>https://ganjagoddessai.com/vr</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.95</priority>
-  </url>
-
-  <url>
-    <loc>https://ganjagoddessai.com/xr</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.95</priority>
-  </url>
-
-  <!-- 📚 KNOWLEDGE -->
-
-  <url>
-    <loc>https://ganjagoddessai.com/knowledge</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.92</priority>
-  </url>
-
-  <url>
-    <loc>https://ganjagoddessai.com/learning</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.91</priority>
-  </url>
-
-  <url>
-    <loc>https://ganjagoddessai.com/guides</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.90</priority>
-  </url>
-
-  <!-- 🚚 DELIVERY -->
-
-  <url>
-    <loc>https://ganjagoddessai.com/delivery</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>hourly</changefreq>
-    <priority>0.90</priority>
-  </url>
-
-  <!-- 💰 MONETIZATION -->
-
-  <url>
-    <loc>https://ganjagoddessai.com/monetization</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.89</priority>
-  </url>
-
-  <url>
-    <loc>https://ganjagoddessai.com/hustle</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.88</priority>
-  </url>
-
-  <!-- 🎮 GAMIFICATION -->
-
-  <url>
-    <loc>https://ganjagoddessai.com/gamification</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.88</priority>
-  </url>
-
-  <url>
-    <loc>https://ganjagoddessai.com/rewards</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.87</priority>
-  </url>
-
-  <!-- 📈 ANALYTICS -->
-
-  <url>
-    <loc>https://ganjagoddessai.com/analytics</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>hourly</changefreq>
-    <priority>0.88</priority>
-  </url>
-
-  <!-- 🌐 COMMUNITY -->
-
-  <url>
-    <loc>https://ganjagoddessai.com/community</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.84</priority>
-  </url>
-
-  <url>
-    <loc>https://ganjagoddessai.com/blog</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.84</priority>
-  </url>
-
-  <url>
-    <loc>https://ganjagoddessai.com/news</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>hourly</changefreq>
-    <priority>0.83</priority>
-  </url>
-
-  <!-- 🧠 SYSTEM -->
-
-  <url>
-    <loc>https://ganjagoddessai.com/settings</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-
-  <url>
-    <loc>https://ganjagoddessai.com/profile</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-
-  <url>
-    <loc>https://ganjagoddessai.com/privacy</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.50</priority>
-  </url>
-
-  <url>
-    <loc>https://ganjagoddessai.com/terms</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.50</priority>
-  </url>
-
-  <!-- 🎥 VIDEO -->
-
-  <url>
-    <loc>https://ganjagoddessai.com/demo</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.86</priority>
-
-    <video:video>
-      <video:thumbnail_loc>
-        https://ganjagoddessai.com/assets/screenshots/demo-thumb.png
-      </video:thumbnail_loc>
-
-      <video:title>
-        GanjaGoddessAI Spatial Interface Demo
-      </video:title>
-
-      <video:description>
-        Immersive AI orbital smoke navigation and XR commerce system
-      </video:description>
-
-      <video:content_loc>
-        https://ganjagoddessai.com/assets/video/demo.mp4
-      </video:content_loc>
-
-      <video:publication_date>
-        2026-05-10T00:00:00+00:00
-      </video:publication_date>
-    </video:video>
-  </url>
+<!-- VIDEO -->
+<url>
+<loc>https://ganjagoddessai.com/demo</loc>
+<lastmod>2026-05-10</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.86</priority>
+<video:video>
+<video:thumbnail_loc>https://ganjagoddessai.com/assets/screenshots/demo-thumb.png</video:thumbnail_loc>
+<video:title>GanjaGoddessAI Spatial Interface Demo</video:title>
+<video:description>Immersive AI orbital smoke navigation and XR commerce system</video:description>
+<video:content_loc>https://ganjagoddessai.com/assets/video/demo.mp4</video:content_loc>
+<video:publication_date>2026-05-10T00:00:00+00:00</video:publication_date>
+</video:video>
+</url>
 
 </urlset>
