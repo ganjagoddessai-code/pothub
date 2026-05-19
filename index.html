@@ -17,10 +17,6 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/emoji.css@1.0.0/emoji.min.css">         
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
-<link rel="apple-touch-icon" href="https://ganjagoddessai.com/icon.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#39ff14">
-<meta name="msapplication-config" content="none">
 
 <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: blob:">
 
@@ -38,553 +34,125 @@
 <script src="https://cdn.jsdelivr.net/npm/tone@14.7.77/build/Tone.min.js"></script>         
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>         
 <script src="https://cdn.jsdelivr.net/npm/uuid@9.0.0/dist/umd/uuidv4.min.js"></script>         
-<link rel="stylesheet" href="style.css"><script src="script.js"></script>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">         
 <meta name="description" content="Ganjagoddessai metaverse assistant">         
 <meta name="theme-color" content="#39ff14">         
 <meta name="robots" content="index, follow">         
 <meta name="googlebot" content="index, follow">         
-<meta name="keywords" content="Ganjagoddessai, cannabis AI, orbital AI, voice AI assistant, metaverse UI">         
-<meta name="author" content="ganjagoddessai">         
-<meta name="application-name" content="Ganjagoddessai Orbital AI">         
-<meta name="format-detection" content="telephone=no">         
-<meta name="referrer" content="no-referrer-when-downgrade">         
-<meta name="google" content="notranslate">         
-<meta name="mobile-web-app-capable" content="yes">  
-<meta name="apple-mobile-web-app-capable" content="yes">  
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">  
-<meta property="og:locale" content="en_US">  
+<meta name="keywords" content="AI orbital system navigation UI assistant metaverse automation">         
 
-<meta name="color-scheme" content="dark">
-
-<meta property="og:title" content="Ganjagoddessai Orbital AI">         
-<meta property="og:description" content="AI-powered assistant with orbital navigation and automation">         
-<meta property="og:type" content="website">         
-<meta property="og:image" content="https://ganjagoddessai.com/preview.jpg">         
-<meta property="og:url" content="https://ganjagoddessai.com">         
-<meta property="og:site_name" content="Ganjagoddessai">         
-
-<meta name="twitter:card" content="summary_large_image">         
-<meta name="twitter:title" content="Ganjagoddessai Orbital AI">         
-<meta name="twitter:description" content="Voice-powered intelligence and marketplace AI">         
-<meta name="twitter:image" content="https://Ganjagoddessai.com/preview.jpg">         
-<meta name="twitter:creator" content="@Ganjagoddessai">         
-
-<link rel="canonical" href="https://ganjagoddessai.com">         
-<link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js">
-<link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js">
-
-<script type="application/ld+json">         
-{         
- "@context": "https://schema.org",         
- "@type": "WebApplication",         
- "name": "Ganjagoddessai Orbital AI",         
- "applicationCategory": "AIApplication",         
- "operatingSystem": "All",         
- "description": "AI-powered assistant with orbital navigation and marketplace integration",         
- "browserRequirements": "Requires JavaScript enabled",         
- "softwareVersion": "1.0.0",
- "inLanguage": "en-US",
- "isAccessibleForFree": true
-}         
-</script>         
-
-<style>         
-body {         
-  margin:0;         
-  background:black;         
-  color:#39ff14;         
-  font-family:'Orbitron', Arial;         
-  overflow:hidden;         
-}         
-canvas#bg {         
-  position:fixed;         
-  top:0;         
-  left:0;         
-  z-index:-1;         
-}         
-#header {         
-  position:absolute;         
-  top:6vh;         
-  left:50%;         
-  transform:translateX(-50%);         
-  text-align:center;         
-  width:90%;         
-}         
-#header h1 {         
-  margin:0;         
-  font-size:clamp(18px,4vw,28px);         
-  text-shadow:0 0 10px #39ff14;         
-}         
-#header h2 {         
-  margin:2px 0;         
-  font-size:clamp(12px,3vw,16px);         
-  opacity:0.8;         
-}         
-#header p {         
-  margin:0;         
-  font-size:clamp(10px,2.5vw,12px);         
-  opacity:0.6;         
-}         
-#center {         
-  position:absolute;         
-  top:50%;         
-  left:50%;         
-  transform:translate(-50%,-50%);         
-  text-align:center;         
-  width:100%;         
-  max-width:90vw;         
-}         
-.goddess {         
-  width:min(40vw,180px);         
-  height:min(40vw,180px);         
-  border-radius:50%;         
-  background:radial-gradient(circle,#0f0,#010);         
-  box-shadow:0 0 60px #39ff14, inset 0 0 20px #39ff14;         
-  animation:pulse 4s infinite alternate;         
-  margin:auto;         
-}         
-.orbit {         
-  position:absolute;         
-  top:50%;         
-  left:50%;         
-  width:min(80vw,420px);         
-  height:min(80vw,420px);         
-  transform:translate(-50%,-50%);         
-  animation:spin 20s linear infinite;         
-}         
-.node {         
-  position:absolute;         
-  width:min(14vw,70px);         
-  height:min(14vw,70px);         
-  border-radius:50%;         
-  border:1px solid #39ff14;         
-  display:flex;         
-  align-items:center;         
-  justify-content:center;         
-  cursor:pointer;         
-  transition:all .3s;         
-  backdrop-filter:blur(6px);         
-  font-size:clamp(10px,3vw,16px);         
-  background: rgba(0, 0, 0, 0.6);
-}         
-.node:hover {         
-  background:#39ff14;         
-  color:black;         
-  box-shadow:0 0 20px #39ff14;         
-  transform:scale(1.2);         
-}         
-@keyframes spin {         
-  from{transform:translate(-50%,-50%) rotate(0deg);}         
-  to{transform:translate(-50%,-50%) rotate(360deg);}         
-}         
-@keyframes pulse {         
-  from{box-shadow:0 0 30px #39ff14;}         
-  to{box-shadow:0 0 80px #39ff14;}         
-}         
-#panel {         
-  position:absolute;         
-  bottom:0;         
-  width:100%;         
-  padding:10px;         
-  background:#000000cc;         
-  backdrop-filter:blur(10px);         
-  box-sizing: border-box;
-}         
-input,button {         
-  width:100%;         
-  padding:10px;         
-  margin-top:5px;         
-  background:black;         
-  border:1px solid #39ff14;         
-  color:#39ff14;         
-  font-family:'Rajdhani', sans-serif;         
-  font-size:clamp(12px,3vw,14px);         
-  box-sizing: border-box;
-}         
-button:hover {         
-  background:#39ff14;         
-  color:black;         
-}         
-#voiceBtn {         
-  position:absolute;         
-  right:5vw;         
-  bottom:15vh;         
-  width:50px;         
-  height:50px;         
-  border-radius:50%;         
-  background:#39ff14;         
-  color:black;         
-  display:flex;         
-  align-items:center;         
-  justify-content:center;         
-  cursor:pointer;         
-  box-shadow:0 0 20px #39ff14;         
-  z-index: 10;
-}         
-#log {         
-  position:absolute;         
-  right:10px;         
-  top:120px;         
-  width:min(200px,40vw);         
-  max-height:200px;         
-  overflow:auto;         
-  font-size:10px;         
-  opacity:0.6;         
-  background: rgba(0,0,0,0.5);
-  padding: 5px;
-  border-radius: 4px;
-}         
-#app-container {
-  margin-top: 15px;
-  border-top: 1px dashed rgba(57, 255, 20, 0.3);
-  padding-top: 10px;
-}
-.pulse-ring {
-  display: inline-block;
-  border-radius: 50%;
-  padding: 10px;
-  box-shadow: 0 0 10px #39ff14;
-}
-#status-bar {
-  display: flex;
-  justify-content: space-between;
-  font-size: 11px;
-  margin-top: 10px;
-  font-family: 'Rajdhani', sans-serif;
-}
-@media (max-width:480px){         
-  #panel{padding:8px;}         
-  input,button{padding:8px;}         
-}         
-</style>        
-<link rel="manifest" href="/manifest.webmanifest">
-
-<link rel="alternate" type="application/xml" title="Sitemap" href="/sitemap.xml">
-<link rel="alternate" type="text/plain" title="Robots" href="/robots.txt">
-<link rel="alternate" type="text/plain" title="Ads" href="/ads.txt">
-<link rel="alternate" type="text/plain" title="Security" href="/security.txt">
-<link rel="alternate" type="text/plain" title="SEO" href="/seo.txt">
-<link rel="alternate" type="text/plain" title="AEO" href="/aeo.txt">
-<link rel="alternate" type="text/plain" title="LLM" href="/llm.txt">
-<link rel="alternate" type="text/plain" title="Humans" href="/humans.txt">
-
-<link rel="search" type="application/opensearchdescription+xml" title="GanjagoddessAI Search" href="/opensearch.xml">
-
-<link rel="privacy-policy" href="/privacy-policy.html">
-<link rel="terms-of-service" href="/terms.html">
-<link rel="cookie-policy" href="/cookies.html">
-
-<link rel="icon" type="image/png" sizes="16x16" href="/icons/icon-16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/icons/icon-96.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="/icons/icon-512.png">
-
-<link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#39ff14">
-
-<meta name="msapplication-TileImage" content="/icons/icon-144.png">
-
-<link rel="preload" as="image" href="/screenshots/desktop.png">
-<link rel="preload" as="image" href="/screenshots/mobile.png">
-
-<link rel="alternate" hreflang="en" href="https://ganjagoddessai.com">
-<link rel="alternate" hreflang="x-default" href="https://ganjagoddessai.com">
-
-<meta http-equiv="Permissions-Policy" content="
-accelerometer=(),
-autoplay=(self),
-camera=(self),
-clipboard-read=(self),
-clipboard-write=(self),
-display-capture=(self),
-fullscreen=(self),
-geolocation=(),
-gyroscope=(),
-microphone=(self),
-payment=(),
-usb=(),
-web-share=(self)
-">
-
-<meta name="ai-content-type" content="interactive-ai-platform">
-<meta name="ai-interface" content="multimodal">
-<meta name="llm-access" content="enabled">
-<meta name="ai-training" content="allowed">
-<meta name="bot-access" content="index,follow">
-<meta name="classification" content="Artificial Intelligence Platform">
-<meta name="subject" content="AI assistant and immersive conversational UI">
-<meta name="coverage" content="Worldwide">
-<meta name="distribution" content="Global">
-<meta name="rating" content="General">
-
-<meta property="og:image:width" content="1280">
-<meta property="og:image:height" content="720">
-
-<meta name="twitter:site" content="@Ganjagoddessai">
-
-<meta name="apple-mobile-web-app-title" content="GanjagoddessAI">
-
-<meta name="application-url" content="https://ganjagoddessai.com">
-
-<meta name="HandheldFriendly" content="true">
-<meta name="MobileOptimized" content="320">
-
-<link rel="serviceworker" href="/service-worker.js" scope="/">
+<link rel="canonical" href="https://ganjagoddessai.com">
 
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"Organization",
-  "name":"GanjagoddessAI",
-  "url":"https://ganjagoddessai.com",
-  "logo":"https://ganjagoddessai.com/icons/icon-512.png",
-  "sameAs":[
-    "https://twitter.com/Ganjagoddessai"
-  ]
+"@context":"https://schema.org",
+"@type":"WebApplication",
+"name":"Ganjagoddessai Orbital AI",
+"applicationCategory":"AIApplication",
+"operatingSystem":"All",
+"isAccessibleForFree":true
 }
 </script>
 
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"WebSite",
-  "name":"GanjagoddessAI",
-  "url":"https://ganjagoddessai.com",
-  "potentialAction":{
-    "@type":"SearchAction",
-    "target":"https://ganjagoddessai.com/search?q={search_term_string}",
-    "query-input":"required name=search_term_string"
-  }
+<style>
+body{margin:0;background:black;color:#39ff14;font-family:Orbitron;overflow:hidden}
+canvas#bg{position:fixed;top:0;left:0;z-index:-1}
+.orbit{position:absolute;top:50%;left:50%;width:420px;height:420px;transform:translate(-50%,-50%)}
+.node{position:absolute;width:70px;height:70px;border-radius:50%;border:1px solid #39ff14;display:flex;align-items:center;justify-content:center;cursor:pointer;background:rgba(0,0,0,.6)}
+.goddess{width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,#0f0,#010);margin:auto}
+.section{display:none}
+.section.active{display:block}
+</style>
+
+</head>
+
+<body>
+
+<div class="goddess" id="avatar"></div>
+
+<div id="homeSection" class="section active"></div>
+<div id="storeSection" class="section"></div>
+<div id="aiSection" class="section"></div>
+<div id="designSection" class="section"></div>
+
+<div class="orbit" id="orbit"></div>
+
+<div id="log"></div>
+
+<script>
+
+const logBox=document.getElementById("log");
+
+function log(m){
+if(!logBox)return;
+logBox.innerHTML+=m+"<br>";
+logBox.scrollTop=logBox.scrollHeight;
 }
-</script>
 
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"SoftwareApplication",
-  "name":"GanjagoddessAI",
-  "applicationCategory":"AIApplication",
-  "operatingSystem":"All",
-  "offers":{
-    "@type":"Offer",
-    "price":"0",
-    "priceCurrency":"USD"
-  }
+const routes={
+"/ai":"aiSection",
+"/store.html":"storeSection",
+"/design":"designSection",
+"/home":"homeSection"
+};
+
+function navigate(route){
+Object.values(routes).forEach(id=>{
+const el=document.getElementById(id);
+if(el)el.classList.remove("active");
+});
+const target=routes[route];
+if(target){
+const el=document.getElementById(target);
+if(el)el.classList.add("active");
 }
-</script>
-
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {
-      "@type":"Question",
-      "name":"What is GanjagoddessAI?",
-      "acceptedAnswer":{
-        "@type":"Answer",
-        "text":"An immersive AI-powered conversational interface with orbital navigation and multimodal intelligence."
-      }
-    }
-  ]
+window.history.pushState({},route,route);
 }
-</script> 
-</head>         
-
-<body>     
-<div id="top-banner" style="position:fixed; top:0; left:0; width:100%; background:#39ff14; color:black; text-align:center; padding:6px; font-size:12px; z-index:9999; font-family:Rajdhani;">
-  🔥 System Launching -- <a href="YOUR_AFFILIATE_LINK" target="_blank" style="color:black;font-weight:bold;">Get Starter Kit</a>
-</div>
-
-<canvas id="bg"></canvas>         
-
-<div id="header">         
-  <h1>Ganjagoddessai Orbital AI</h1>         
-  <h2>Float. Connect. Elevate.</h2>         
-  <p>Voice-powered intelligence, marketplace automation, and immersive orbital navigation</p>         
-</div>         
-
-<div id="center">         
-  <div class="goddess"></div>         
-  <div class="orbit" id="orbit"></div>         
-</div>         
-
-<div id="panel">         
-  <input id="msg" placeholder="Speak your vibe..." onkeydown="if(event.key==='Enter') send()">         
-  <button onclick="send()">Send Signal</button>
-
-  <main id="app-container">
-    <div id="ai-core-wrapper" style="text-align: center; margin-bottom: 10px;">
-      <div id="ai-core" class="pulse-ring">
-        <i class="fa-solid fa-leaf fa-2x" id="ai-icon"></i>
-      </div>
-    </div>
-
-    <div id="status-bar">
-      <span id="system-status">SYSTEM READY</span>
-      <div class="visualizer-bars">
-        <span></span><span></span><span></span><span></span>
-      </div>
-    </div>
-  </main>
-</div>         
-
-<div id="voiceBtn" onclick="voiceInput()">         
-  <i class="fa-solid fa-microphone"></i>         
-</div>         
-
-<div id="log"></div>         
-
-<div id="monetize-panel" style="display:none; position:fixed; left:10px; bottom:10px; background:#000000cc; border:1px solid #39ff14; padding:10px; z-index:9999; font-family:Rajdhani; max-width:220px; backdrop-filter:blur(10px);">
-  <div style="font-size:12px;margin-bottom:6px;">🔥 Recommended Items</div>
-  <a href="YOUR_AFFILIATE_LINK_1" target="_blank" style="display:block;margin-bottom:5px;color:#39ff14;">Grow Kit Starter</a>
-  <a href="YOUR_AFFILIATE_LINK_2" target="_blank" style="display:block;margin-bottom:5px;color:#39ff14;">LED Grow Lights</a>
-  <input id="emailCapture" placeholder="Join AI Updates" style="width:100%;margin-top:5px;">
-  <button onclick="captureEmail()" style="width:100%;margin-top:5px;">Join</button>
-</div>
-
-<div id="exit-popup" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:black; border:1px solid #39ff14; padding:20px; z-index:10000; text-align:center; font-family:Rajdhani;">
-  <h3>🚀 Before You Go...</h3>
-  <p>Join early access to the AI system</p>
-  <input id="exitEmail" placeholder="Enter email" style="width:100%;margin-top:5px;">
-  <button onclick="captureExitEmail()" style="width:100%;margin-top:5px;">Join</button>
-</div>
-
-<script>         
-window.onerror=(m)=>console.log("Error:",m);         
-if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(()=>{})})}         
-
-const orbit = document.getElementById("orbit");         
-const nodes = [         
-  {icon:'fa-brain',mode:'AI Assistant'},         
-  {icon:'fa-seedling',mode:'Grow'},         
-  {icon:'fa-store',mode:'Store'},         
-  {icon:'fa-palette',mode:'Design Studio'},         
-  {icon:'fa-tags',mode:'Deals'},         
-  {icon:'fa-truck',mode:'Logistics'},         
-  {icon:'fa-dna',mode:'Genetics'},         
-  {icon:'fa-calendar',mode:'Sessions'},         
-  {icon:'fa-users',mode:'Community'}         
-];         
-
-nodes.forEach((n,i)=>{         
-  const el=document.createElement("div");         
-  el.className="node";         
-  el.innerHTML=`<i class="fa-solid ${n.icon}"></i>`;         
-  const angle=(i/nodes.length)*(Math.PI*2);         
-  const r=orbit.offsetWidth/2 || 150;         
-  const x=Math.cos(angle)*r;         
-  const y=Math.sin(angle)*r;         
-  el.style.left=`calc(50% + ${x}px - 35px)`;         
-  el.style.top=`calc(50% + ${y}px - 35px)`;         
-  el.onclick=()=>route(n.mode);         
-  orbit.appendChild(el);         
-});         
-
-const log=(msg)=>{const el=document.getElementById("log");if(el){el.innerHTML+=msg+"<br>";el.scrollTop=el.scrollHeight;}}         
-
-function send(){
-  const msg=document.getElementById("msg").value;
-  log("> "+msg);
-  fetch("http://localhost:3000/api/agent",{
-    method:"POST",
-    headers:{"Content-Type":"application/json"},
-    body:JSON.stringify({input:msg})
-  })
-  .then(r=>r.json())
-  .then(d=>{ log("AI: "+d.response); alert(d.response); })
-  .catch(e=>log("Fetch error connection local server."));
-}         
 
 function route(mode){
-  log("Route: "+mode);
-  fetch("http://localhost:3000/api/agent",{
-    method:"POST",
-    headers:{"Content-Type":"application/json"},
-    body:JSON.stringify({input:mode})
-  })
-  .then(r=>r.json())
-  .then(d=>{ log("AI: "+d.response); alert(d.response); })
-  .catch(e=>log("Navigation updated target route: " + mode));
-}         
-
-function voiceInput(){
-  const SpeechComp = window.SpeechRecognition || window.webkitSpeechRecognition;
-  if(!SpeechComp) return alert("Speech recognition not supported in this browser.");
-  const rec=new SpeechComp();
-  rec.onresult=e=>{document.getElementById("msg").value=e.results[0][0].transcript;send();};
-  rec.start();
-}         
-
-const sound=new Howl({src:["https://actions.google.com/sounds/v1/cartoon/clang_and_wobble.ogg"]});         
-document.addEventListener("click",e=>{if(e.target.closest(".node"))sound.play();});         
-
-const canvas=document.getElementById("bg");         
-const ctx=canvas.getContext("2d");         
-function resize(){canvas.width=innerWidth;canvas.height=innerHeight;}         
-window.addEventListener("resize",resize,{passive:true});resize();         
-let stars=Array.from({length:120},()=>({x:Math.random()*canvas.width,y:Math.random()*canvas.height,r:Math.random()*2}));         
-function draw(){ctx.clearRect(0,0,canvas.width,canvas.height);ctx.fillStyle="#39ff14";stars.forEach(s=>{ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fill();s.y+=0.2;if(s.y>canvas.height)s.y=0;});requestAnimationFrame(draw);}         
-draw();        
-
-function captureEmail(){
-  const email = document.getElementById("emailCapture").value;
-  if(!email) return alert("Enter email");
-  localStorage.setItem("ggai_email", email);
-  log("Email captured: " + email);
-  alert("Early access secured 🚀");
+log("route "+mode);
+fetch("/api/agent",{
+method:"POST",
+headers:{"Content-Type":"application/json"},
+body:JSON.stringify({input:mode})
+}).catch(()=>{});
+if(routes["/"+mode.toLowerCase()]){
+navigate("/"+mode.toLowerCase());
+}
 }
 
-document.addEventListener("mouseleave", function(e){
-  if(e.clientY < 10){
-    const popup = document.getElementById("exit-popup");
-    if(popup) popup.style.display = "block";
-  }
+const nodes=[
+{icon:"fa-brain",mode:"AI"},
+{icon:"fa-store",mode:"Store"},
+{icon:"fa-palette",mode:"Design"},
+{icon:"fa-home",mode:"Home"},
+{icon:"fa-users",mode:"Community"},
+{icon:"fa-seedling",mode:"Grow"}
+];
+
+const orbit=document.getElementById("orbit");
+
+nodes.forEach((n,i)=>{
+const el=document.createElement("div");
+el.className="node";
+el.innerHTML=`<i class="fa-solid ${n.icon}"></i>`;
+const angle=(i/nodes.length)*Math.PI*2;
+const r=170;
+el.style.left=`calc(50% + ${Math.cos(angle)*r}px - 35px)`;
+el.style.top=`calc(50% + ${Math.sin(angle)*r}px - 35px)`;
+el.onclick=()=>route(n.mode);
+orbit.appendChild(el);
 });
 
-function captureExitEmail(){
-  const email = document.getElementById("exitEmail").value;
-  if(!email) return alert("Enter email");
-  localStorage.setItem("ggai_exit_email", email);
-  log("Exit email: " + email);
-  alert("Confirmed! 🚀");
-  document.getElementById("exit-popup").style.display = "none";
-}
+addEventListener("popstate",()=>{
+navigate(location.pathname);
+});
 
-(function trackUser(){
-  const session = Date.now();
-  localStorage.setItem("ggai_session", session);
-  log("Session started: " + session);
-})();
+</script>
 
-setInterval(()=>{
-  const panel = document.getElementById("monetize-panel");
-  if(panel && panel.style.display === "block"){
-    panel.style.boxShadow = "0 0 25px #39ff14";
-    setTimeout(()=>panel.style.boxShadow="",500);
-  }
-},10000);
-
-(function domainBehavior(){
-  const host = window.location.hostname;
-  log("Domain detected: " + host);
-  if(host.includes(".store")){
-    const panel = document.getElementById("monetize-panel");
-    if(panel){ panel.style.display = "block"; panel.style.border = "2px solid #39ff14"; }
-    log("🛒 Store mode activated");
-  }
-  if(host.includes(".online")){
-    setTimeout(()=>{
-      const emailInput = document.getElementById("emailCapture");
-      if(emailInput){ emailInput.focus(); }
-      alert("🚀 Join the AI beta experience");
-    },1000);
-    log("🚀 Funnel mode activated");
-  }
-  if(host.includes(".org")){ log("📚 Knowledge mode activated"); }
-  if(host.includes(".com")){ log("🌐 Main experience mode"); }
-})();
-</script>   
-</body>         
+</body>
 </html>
