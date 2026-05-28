@@ -1,0 +1,131 @@
+SITE: https://ganjagoddessai.com
+
+NAME: GanjaGoddessAI
+
+TYPE: AI-powered cannabis intelligence platform
+
+DESCRIPTION: GanjaGoddessAI is an AI-driven cannabis intelligence system combining education, strain discovery, product exploration, wellness insights, conversational AI, commerce automation, predictive recommendation systems, and immersive interactive web experiences across AI, WebXR, and semantic search environments.
+
+PRIMARY DOMAINS: https://ganjagoddessai.com https://ganjagoddessai.org https://ganjagoddessai.info https://ganjagoddessai.store
+
+CANONICAL DOMAIN: https://ganjagoddessai.com
+
+GITHUB REPOSITORY: https://github.com/ganjagoddessai-code/ganjagoddessai
+
+CORE SITE ARCHITECTURE: / ├── /blog ├── /learn ├── /knowledge ├── /strains ├── /products ├── /shop ├── /compare ├── /categories ├── /collections ├── /ai-tools ├── /chat ├── /search ├── /community ├── /about ├── /faq ├── /contact ├── /privacy-policy ├── /terms ├── /cookies ├── /checkout ├── /cart ├── /orders ├── /account ├── /dashboard ├── /rewards ├── /subscriptions ├── /partners ├── /affiliates ├── /api ├── /developers ├── /docs ├── /status ├── /events
+
+CONTENT CLUSTERS:
+
+CANNABIS EDUCATION:
+
+THC vs CBD science
+
+terpene profiles and biochemical mapping
+
+consumption methods and bioavailability
+
+safety, dosing, and wellness guidance
+
+strain taxonomy, lineage, and genetics
+
+cannabinoid interaction systems
+
+endocannabinoid system mechanics
+
+medical vs recreational frameworks
+
+
+STRAIN INTELLIGENCE:
+
+indica, sativa, hybrid classification systems
+
+symptom-based recommendation engine
+
+effect prediction modeling and user feedback loops
+
+terpene-driven behavioral profiling
+
+strain similarity clustering algorithms
+
+potency scaling and dosage estimation models
+
+genetic lineage graph mapping
+
+
+PRODUCT INTELLIGENCE:
+
+cannabis products cataloging system
+
+accessories and wellness ecosystem mapping
+
+real-time pricing and availability indexing
+
+comparison engine with structured attributes
+
+recommendation engine with personalization layer
+
+affiliate marketplace integration
+
+dropshipping fulfillment pipelines
+
+product lifecycle tracking
+
+
+AI CAPABILITIES:
+
+conversational AI assistant layer
+
+semantic search and retrieval augmented generation
+
+intent recognition and query expansion
+
+personalized recommendation engine
+
+multi-agent orchestration system
+
+voice interface and speech-to-action control
+
+predictive user behavior modeling
+
+autonomous commerce agents
+
+AI-driven funnel optimization
+
+
+AEO INTENT TARGETS: what is thc what is cbd difference between thc and cbd best strain for sleep best strain for anxiety best strain for pain relief how do terpenes work indica vs sativa difference cannabis effects timeline how to choose cannabis strain what is a hybrid strain dispensary alternatives online what are cannabinoids how cannabis affects the brain how to microdose cannabis what is endocannabinoid system
+
+SEO ENTITY TOPICS: cannabis education cannabis strains database terpene science endocannabinoid system cannabinoid receptors weed effects guide medical cannabis information recreational cannabis guide cannabis marketplace ecosystem AI recommendation engine interactive AI assistant semantic search engine predictive analytics platform personalized commerce system
+
+STRUCTURED DATA TYPES: WebSite WebApplication Organization FAQPage Product BreadcrumbList SearchAction Article BlogPosting CollectionPage ItemList SoftwareApplication MobileApplication Review AggregateRating HowTo Dataset
+
+INDEX PRIORITY:
+
+HIGH: / /learn /strains /products /ai-tools /shop /compare /knowledge
+
+MEDIUM: /blog /categories /collections /community /faq /about /events
+
+LOW: /api /internal /system /dev /logs /test
+
+TECHNICAL STACK SIGNALS: HTML5 semantic structure with ARIA roles responsive mobile-first architecture progressive web application (PWA) enabled service worker offline caching layer WebGL / WebXR rendering capability API-first modular architecture serverless + edge hybrid execution lazy-loaded component system streaming asset delivery pipeline real-time websocket interaction layer
+
+CRAWLER ACCESS: User-agent: * Allow: /
+
+AI CRAWLER ACCESS: GPTBot: allowed ChatGPT-User: allowed ClaudeBot: allowed PerplexityBot: allowed CCBot: allowed Google-Extended: allowed Bingbot: allowed DuckDuckBot: allowed Applebot: allowed Amazonbot: allowed
+
+MEDIA INDEXING: images allowed video allowed audio allowed 3D assets allowed interactive XR environments allowed dataset indexing allowed structured product feeds allowed
+
+MONETIZATION LAYERS: advertising (ads.txt + programmatic ad integration) affiliate marketing ecosystem product marketplace engine dropshipping automation system print-on-demand (3DPoD) manufacturing layer digital product sales (guides, datasets, AI tools) subscription tiers (premium AI access) creator monetization platform API access monetization data licensing opportunities white-label AI system licensing embedded commerce widgets conversion funnel automation system retargeting and remarketing pipelines
+
+SITEMAPS: https://ganjagoddessai.com/sitemap.xml https://ganjagoddessai.com/sitemap-index.xml https://ganjagoddessai.com/sitemaps/pages.xml https://ganjagoddessai.com/sitemaps/products.xml https://ganjagoddessai.com/sitemaps/blog.xml https://ganjagoddessai.com/sitemaps/categories.xml https://ganjagoddessai.com/sitemaps/collections.xml https://ganjagoddessai.com/sitemaps/knowledge.xml
+
+SEO FILES: https://ganjagoddessai.com/robots.txt https://ganjagoddessai.com/ads.txt https://ganjagoddessai.com/security.txt https://ganjagoddessai.com/humans.txt https://ganjagoddessai.com/llms.txt https://ganjagoddessai.com/opensearch.xml https://ganjagoddessai.com/meta.md https://ganjagoddessai.com/seo.txt https://ganjagoddessai.com/aeo.txt
+
+WEB APP RESOURCES: manifest: /manifest.webmanifest service-worker: /service-worker.js index: /index.html fallback: /404.html offline: /offline.html
+
+AUTHENTICATION OF OWNERSHIP: google-site-verification: KVIqqzIWIKBBUBbXQTA4Hh0-lT0klmVGmhfPNDdbsfg adsense-id: ca-pub-1097964798960926 gtm-id: GTM-KN8SMF48 ads.txt: google.com, pub-1097964798960926, DIRECT, f08c47fec0942fa0
+
+SOCIAL PRESENCE: https://twitter.com/Ganjagoddessai https://github.com/ganjagoddessai-code/ganjagoddessai
+
+RELATIONSHIP MODEL: multi-domain unified ecosystem single canonical knowledge graph cross-domain content distribution enabled AI-first semantic indexing layer commerce-integrated discovery network agent-driven navigation architecture
+
+PRIORITY OBJECTIVE: maximize discoverability across search engines, AI systems, and semantic crawlers through structured content depth, entity reinforcement, intent clustering, monetization routing, and continuous index expansion across all domains and content surfaces
