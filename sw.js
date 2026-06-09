@@ -1,40 +1,29 @@
-const CACHE_VERSION = 'ganjagoddessai-v1.0.0';
+const APP_NAME = 'ganjagoddessai';
+const APP_VERSION = 'v1.0.0';
+const BUILD_ID = Date.now();
+
+const CACHE_VERSION = `${APP_NAME}-${APP_VERSION}-${BUILD_ID}`;
+
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const DYNAMIC_CACHE = `${CACHE_VERSION}-dynamic`;
 const API_CACHE = `${CACHE_VERSION}-api`;
 const IMAGE_CACHE = `${CACHE_VERSION}-images`;
 const MODEL_CACHE = `${CACHE_VERSION}-models`;
 const FONT_CACHE = `${CACHE_VERSION}-fonts`;
-const OFFLINE_URL = '/offline.html';
+const XR_CACHE = `${CACHE_VERSION}-xr`;
+const AUDIO_CACHE = `${CACHE_VERSION}-audio`;
+const VIDEO_CACHE = `${CACHE_VERSION}-video`;
+const CDN_CACHE = `${CACHE_VERSION}-cdn`;
+const OFFLINE_CACHE = `${CACHE_VERSION}-offline`;
 
-const STATIC_ASSETS = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/offline.html',
-  '/robots.txt',
-  '/sitemap.xml',
-  '/assets/css/styles.css',
-  '/assets/js/app.js',
-  '/assets/js/orbit-engine.js',
-  '/assets/js/smoke-engine.js',
-  '/assets/js/voice-engine.js',
-  '/assets/js/ai-engine.js',
-  '/assets/js/ar-engine.js',
-  '/assets/js/vr-engine.js',
-  '/assets/js/pwa-engine.js',
-  '/assets/audio/ambient.mp3',
-  '/assets/models/goddess.glb',
-  '/assets/icons/icon-72.png',
-  '/assets/icons/icon-96.png',
-  '/assets/icons/icon-128.png',
-  '/assets/icons/icon-144.png',
-  '/assets/icons/icon-152.png',
-  '/assets/icons/icon-192.png',
-  '/assets/icons/icon-384.png',
-  '/assets/icons/icon-512.png',
-  '/assets/screenshots/hero.png',
-  '/assets/screenshots/mobile.png'
+const OFFLINE_URL = '/offline.html';
+const OFFLINE_FALLBACKS = {
+  page: '/offline.html',
+  api: '/offline.json',
+  image: '/assets/screenshots/offline.png',
+  model: '/assets/models/fallback.glb',
+  audio: '/assets/audio/offline.mp3'
+};  '/assets/screenshots/mobile.png'
 ];
 
 const API_ROUTES = [
